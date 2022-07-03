@@ -15,6 +15,12 @@ nav {
 .nav-name{
     font-size: 1.5em;
     color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.nav-name:hover{
+    transform: scale(1.1);
 }
 
 .nav-item{
@@ -136,9 +142,14 @@ border-radius: 50%;
 }
 
 .sobre-mi-titulo{
-    font-size: 2rem;
+    
     text-align: right;
-    font-family: 'Kumbh Sans', sans-serif; ;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 2.5em;
+    background: #222222;
+    color: white;
+    width: 41%;
+    border-radius: 4px;
 }
 
 

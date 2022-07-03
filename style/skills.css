@@ -17,15 +17,18 @@
     color: white;
 }
 
-.skills-titulo-principal{
+.skills-titulo-principal, .titulo{
+    color: #484848;
     text-align: center;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 2rem;
-    margin: 0;
-    padding: 0.5em 0;  
-    color: white;  
-    padding-top: 2em;
+    font-family: 'Anonymous Pro', monospace;
+    background: orange;
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 3rem;
 }
+
 
 
 .skills-flex-item, .skills-flex-item-diseño{

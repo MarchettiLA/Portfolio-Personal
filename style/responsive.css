@@ -35,11 +35,20 @@
 
     .nav-lista{
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         height: 30vh;
         transition: all 1s;
         opacity: 0;
         height: 0;
+        margin-top: 2em;
+        padding: 0;
+       
+    }
+
+    .nav-item{
+        border-bottom: 3px double rgba(255, 166, 0, 0.726);
+        width: 100%;
+        text-align: center;
     }
 
     .header-quien-soy{
@@ -60,6 +69,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .quien-soy-enlaces{
+        margin: 1.5em;
     }
 
     .enlaces-link{
@@ -91,8 +104,7 @@
     }
 
     .sobre-mi__tipografia{
-        width: 80%;
-
+        width: 100%;
     }
 
     .sobre-mi-titulo{
@@ -100,7 +112,9 @@
     }
 
     .sobre-mi-parrafo{
-        padding-left: 0 ;
+       
+        align-self: center;
+        width: 80%;
     }
 
     .sobre-mi__imagen{

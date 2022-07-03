@@ -10,12 +10,13 @@
     font-size: 2rem;
     margin-bottom: 2em;
     padding-top: 2em;
-
 }
 
-.formacion-academica-title h3 {
-    margin: 0;
+.formacion-academica-title h3{
+    background-color: #414141;
+    color: #f1f1f1;
 }
+
 
 .formacion-academica-item{
     transition: all 0.5s;

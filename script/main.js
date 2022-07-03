@@ -33,7 +33,7 @@ navMenuButton.addEventListener("click",()=>{
     }
 })
 
-// OPACIDAD LANDING
+// OPACIDAD LANDING ONLOAD
 
 const landingPage = document.querySelector(".header-quien-soy");
 
@@ -43,19 +43,19 @@ const showLandingPage = () => {
 
 window.addEventListener("load",showLandingPage);
 
-// OPACIDAD NAV MENU
+// OPACIDAD NAV MENU ONLOAD
 
+const navName = document.querySelector(".nav-name");
 const navItems = document.querySelectorAll(".nav-item");
 
 const showNavItems = () => {
     transitionSec = 0.5
     for(let element of navItems){
-        element.classList.add("invisible")
-        element.style.transition = `${transitionSec}s`
+        element.style.transition = `all ${transitionSec}s`;
         transitionSec += 0.5;
         element.classList.replace("invisible","visible");
+        navName.style.opacity = 1;
     }
-    
     setTimeout(normalizeTransition,2500)
 }
 
@@ -64,7 +64,6 @@ const normalizeTransition = () => {
         element.style.transition = `0.5s`
     }
 }
-
 window.addEventListener("load", showNavItems)
 
 //OPACIDAD Y MOVIMIENTO
