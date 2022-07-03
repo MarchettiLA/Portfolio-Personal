@@ -58,7 +58,7 @@ nav {
 }
 
 .presentacion-name{
-    color: orange;
+    color: #ffa500;
 }
 
 .quien-soy-detalles{
@@ -119,20 +119,26 @@ border-radius: 50%;
 .main-sobre-mi{
     font-family: 'Raleway', sans-serif;
     display: flex;
+    flex-direction: column;
     opacity: 0;
     transform: scaleX(0);   
     transition: all 1s; 
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(180deg, rgba(226,146,0,1) 0%, rgba(255,165,0,1) 50%, rgba(226,146,0,1) 100%);
 }
 
 .sobre-mi__tipografia{
     width: 75%;
     transition: all 1s; 
     opacity: 0;
+    height: 40%;
 }
 
 .sobre-mi-titulo{
-    font-size: 2em;
+    font-size: 2rem;
     text-align: right;
+    font-family: 'Kumbh Sans', sans-serif; ;
 }
 
 
@@ -140,27 +146,31 @@ border-radius: 50%;
     text-align: justify;
     width: 100%;
     padding-left: 25%;
-    font-size: 1em;
+    font-size: 1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 
 .sobre-mi__imagen{
     display: flex;
-    width: 25%;
-    border-radius: 24px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     order: -1;
     transition: all 1s;   
     opacity: 0;  
+    height: 60vh;
+    box-shadow: 0px 5px 10px #1e1e1e99
 }
     
     
 
 
 .sobre-mi__imagen img{
-    width: 80%;
-    border-radius: 24px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
 }
 
 
