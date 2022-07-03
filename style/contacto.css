@@ -1,7 +1,7 @@
 /* CONTACTO */
 footer{
     background-color: rgba(10, 10, 10, 0.829);
-    border-top: double 20px rgba(35, 122, 1, 0.37);   
+    border-top: double 20px orange  
 }
 
 .contacto__contenedor-form-redes{
@@ -18,7 +18,7 @@ footer{
 .contacto p {
     font-family: 'Raleway', sans-serif;
     color: white;
-    border: 6px double  rgba(35, 122, 1, 0.5);
+    border: 6px double  orange;
     padding: 1em;
     box-sizing: border-box;
     border-radius: 12px;
@@ -61,7 +61,7 @@ footer{
 .contacto button{
     padding: 1.5em;
     border-radius: 12px;
-    background-color: rgba(35, 122, 1, 0.5);
+    background-color: orange;
     font-family: "Montserrat", sans-serif;
     width: 80%;
     margin: 0 10% ;

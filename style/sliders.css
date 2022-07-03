@@ -48,7 +48,7 @@
     width: 40px ;
     height: 40px;  
     border-radius: 50%;
-    border: 2px solid green;
+    border: 2px solid orange;
     color: white;
     background-color: transparent;
     position: absolute;
@@ -69,7 +69,7 @@
 }
 
 .slider-container__menu button:hover{
-    background-color: green;
+    background-color: orange;
     border: 2px solid white;
 }
 
@@ -78,9 +78,7 @@
     background-color: orange;
 }
 
-.menu__line:active{
-    background-color: red;
-}
+
 
 
 .menu__line a{

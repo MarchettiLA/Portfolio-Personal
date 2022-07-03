@@ -6,6 +6,12 @@ const barras = document.createElement("i");
 barras.classList.add("fa-solid", "fa-bars", "nav__mobile-button__barras");
 
 const navList = document.querySelector(".nav__lista");
+const navItems = document.querySelectorAll(".nav__item");
+
+// CUANDO TODO ESTA CON MAXIMA OPACIDAD SE MODIFICA A TRUE
+let ready = false;
+
+//AGREGANDO NAV-MENU__BUTTON
 
 headerNav.appendChild(navMenuButton);
 navMenuButton.appendChild(barras);
@@ -20,39 +26,53 @@ const responsiveInterval = () =>{
 
 setInterval(responsiveInterval, 200)
 
+//EVENTO QUE ABRE Y CIERRA MENU MOBILE
 
-navMenuButton.addEventListener("click",()=>{
-    if(navList.style.opacity == 0){
+navMenuButton.addEventListener("click",abrirYCerrarNavMenu =()=>{
+    if(navList.style.opacity == 0 && !ready){
         navList.style.transition = "height 0.5s, opacity 1s"
         navList.style.opacity = 1
         navList.style.height = "30vh"
+        ready = true;
     } else  {
+        ready = false
         navList.style.transition = "height 1s, opacity 0.5s"
         navList.style.opacity = 0
         navList.style.height = 0
     }
 })
-
 window.addEventListener("load", ()=> {
     navMenuButton.style.opacity = 1;
-    animarNavMobileButtonX();
     navMenuButton.style.transition = "all 2s"
-    animarNavMobileButtonY();
 })
 
-const animarNavMobileButton = () => {
+//REDIRECCION DE NAV ITEMS
 
-}
+const urls = ["#sobre-mi", "#web", "#design", "#formacion", "#proyectos", "#contacto"];
 
-const animarNavMobileButtonX = () => {
-    navMenuButton.style.transform = "scaleX(0.5)"
-    navMenuButton.style.transform = "scaleX(1)"
-}
+// CERRAR NAV MENU MOBILE AL SELECCIONAR UNA OPCION
 
-const animarNavMobileButtonY = () => {
-    navMenuButton.style.transform = "scaleY(0.5)";
-    navMenuButton.style.transform = "scaleY(1)";
-}
+const navItemsLinks = document.querySelectorAll(".nav__item a")
+
+for (let i=0;i<navItems.length;i++){
+        navItems[i].addEventListener("click", ()=>{
+        if (ready){
+            navMenuButton.click();
+            setTimeout(()=>{
+                navItemsLinks[i].href = urls[i];
+                navItemsLinks[i].click();
+                navItemsLinks[i].removeAttribute("href");
+            }, 350)
+            
+        }        
+        })
+     }
+  
+
+
+
+
+
 
 // OPACIDAD LANDING ONLOAD
 
@@ -67,7 +87,7 @@ window.addEventListener("load",showLandingPage);
 // OPACIDAD NAV MENU ONLOAD
 
 const navName = document.querySelector(".nav__name");
-const navItems = document.querySelectorAll(".nav__item");
+
 
 const showNavItems = () => {
     transitionSec = 0.5
