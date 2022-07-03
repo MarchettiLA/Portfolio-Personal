@@ -23,7 +23,9 @@
         position: absolute;
         right: 1.5rem;
         top: 0.75em;
-             
+        opacity: 0;
+        transition: all 1s;
+       
     }
 
     .nav__mobile-button i{
@@ -137,12 +139,12 @@
 
     /* CONTACTO */
 
-    .contacto-contenedor-form-redes{
+    .contacto__contenedor-form-redes{
         flex-direction: column;
 
     }
 
-    .contacto .contacto-formulario{
+    .contacto .contacto__formulario{
         width: 100%;
     }
 
@@ -154,11 +156,11 @@
         gap: 20px;
     }
 
-    .redes-links{
+    .redes__links{
         width: 45%;
     }
 
-    .redes-links:last-child{
+    .redes__links:last-child{
         font-size: 14px;
     }
     

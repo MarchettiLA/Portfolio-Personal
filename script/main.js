@@ -1,11 +1,11 @@
 
 const headerNav = document.querySelector(".header__nav");
 const navMenuButton = document.createElement("div");
-navMenuButton.classList.add("nav__mobile__button");
+navMenuButton.classList.add("nav__mobile-button");
 const barras = document.createElement("i");
-barras.classList.add("fa-solid", "fa-bars", "nav-mobile-button__barras");
+barras.classList.add("fa-solid", "fa-bars", "nav__mobile-button__barras");
 
-const navList = document.querySelector(".nav-lista");
+const navList = document.querySelector(".nav__lista");
 
 headerNav.appendChild(navMenuButton);
 navMenuButton.appendChild(barras);
@@ -31,6 +31,10 @@ navMenuButton.addEventListener("click",()=>{
         navList.style.opacity = 0
         navList.style.height = 0
     }
+})
+
+window.addEventListener("load", ()=> {
+    navMenuButton.style.opacity = 1;
 })
 
 // OPACIDAD LANDING ONLOAD
