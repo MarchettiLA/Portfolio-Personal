@@ -35,7 +35,24 @@ navMenuButton.addEventListener("click",()=>{
 
 window.addEventListener("load", ()=> {
     navMenuButton.style.opacity = 1;
+    animarNavMobileButtonX();
+    navMenuButton.style.transition = "all 2s"
+    animarNavMobileButtonY();
 })
+
+const animarNavMobileButton = () => {
+
+}
+
+const animarNavMobileButtonX = () => {
+    navMenuButton.style.transform = "scaleX(0.5)"
+    navMenuButton.style.transform = "scaleX(1)"
+}
+
+const animarNavMobileButtonY = () => {
+    navMenuButton.style.transform = "scaleY(0.5)";
+    navMenuButton.style.transform = "scaleY(1)";
+}
 
 // OPACIDAD LANDING ONLOAD
 
