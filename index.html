@@ -301,25 +301,26 @@
                 </p>
             </div>
             <div class="contacto__contenedor-form-redes">
-                <form action="contact.php" method="post" class="contacto__formulario">
+                <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSc3L--hTUZTHFrcphBaacotyHLJ0QQs-5SAr7-vUqeV6dmHUQ/formResponse?" target="hidden_iframe" method="post"  class="contacto__formulario">
                 <div class="contacto__formulario__contenedor">
                     <label for="name">Nombre</label>
-                    <input type="text" name="nombre" id="name">
+                    <input type="text" class="contacto__formulario__contenedor__input" name="entry.1868322132" id="entry.1868322132">
                 </div>
                 <div class="contacto__formulario__contenedor">
                     <label for="email">E-mail</label>
-                    <input type="email" name="mail" id="email">
+                    <input type="email" class="contacto__formulario__contenedor__input" name="entry.1726531011" id="entry.1726531011">
                 </div>
                 <div class="contacto__formulario__contenedor">
                     <label for="subject">Asunto</label>
-                    <input type="text" name="asunto" id="subject">
+                    <input type="text" class="contacto__formulario__contenedor__input" name="entry.1661223133" id="entry.1661223133">
                 </div>
                 <div class="contacto__formulario__contenedor">
                     <label for="message">Mensaje</label>
-                    <textarea name="mensaje" id="message" rows="5" cols="99"></textarea>
+                    <textarea class="contacto__formulario__contenedor__input" name="entry.121261829" id="entry.121261829" rows="5" cols="99"></textarea>
                 </div>
-                <button type="submit">Enviar Mensaje</button>
+                <button id="submit" type="submit">Enviar Mensaje</button>
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
                 <div class="contenedor-redes">
                     <a href="" class="redes__links">
@@ -352,4 +353,6 @@
 <script src="script/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="script/writing-profession.js"></script>
+<script src="script/form-logic.js"></script>
+
 </html>
