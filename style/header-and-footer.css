@@ -58,9 +58,12 @@ header{
     opacity: 0;
 }
 
-.quien-soy__presentacion{
-    font-size: 52px;
+
+
+.quien-soy__tipografia h1, .quien-soy__tipografia h3{
     font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    margin: .2rem 0
 }
 
 .presentacion__name{
@@ -68,7 +71,6 @@ header{
 }
 
 .quien-soy__detalles{
-   margin-top: -1em;
    font-size: 2.5em;
    font-family: 'Kumbh Sans', sans-serif;
 }
@@ -114,7 +116,7 @@ border-radius: 50%;
 }
 
 .enlaces__link:hover{
-    color: orange
+    color: orange   
 }
 
 .enlaces__link i{

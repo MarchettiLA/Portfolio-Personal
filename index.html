@@ -43,7 +43,8 @@
         <section class="header__quien-soy invisible">
             
             <div class="quien-soy__tipografia">
-                <h3 class="quien-soy__presentacion">Hola, soy <b class="presentacion__name">Lautaro Marchetti</b> y construyo paginas web</h3>
+                <h3 class="quien-soy__presentacion">Hola,</h3>
+                <h1>soy <b class="presentacion__name">Lautaro Marchetti</b></h1>
                     <div class="quien-soy__detalles">
                         <p>Soy <span class="typed profesion-tipada"></span></p>
                     </div>
@@ -300,22 +301,22 @@
                 </p>
             </div>
             <div class="contacto__contenedor-form-redes">
-                <form action="POST" class="contacto__formulario">
+                <form action="contact.php" method="post" class="contacto__formulario">
                 <div class="contacto__formulario__contenedor">
                     <label for="name">Nombre</label>
-                    <input type="text" name="Nombre" id="name">
+                    <input type="text" name="nombre" id="name">
                 </div>
                 <div class="contacto__formulario__contenedor">
                     <label for="email">E-mail</label>
-                    <input type="email" name="Mail" id="email">
+                    <input type="email" name="mail" id="email">
                 </div>
                 <div class="contacto__formulario__contenedor">
                     <label for="subject">Asunto</label>
-                    <input type="text" name="Asunto" id="subject">
+                    <input type="text" name="asunto" id="subject">
                 </div>
                 <div class="contacto__formulario__contenedor">
                     <label for="message">Mensaje</label>
-                    <textarea name="Mensaje" id="message" rows="5" cols="99"></textarea>
+                    <textarea name="mensaje" id="message" rows="5" cols="99"></textarea>
                 </div>
                 <button type="submit">Enviar Mensaje</button>
                 </form>
