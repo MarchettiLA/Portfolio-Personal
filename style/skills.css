@@ -1,23 +1,21 @@
 /* SKILLS */ 
 
-.main-conocimientos{
+.main__conocimientos{
     background-color: #f3f3f3;
-   
 }
 
-.main-conocimientos-diseño{
-    
+.main__conocimientos--diseño{
     padding: 1em;
 }
 
-.skills-titulo{
+.skills__titulo{
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     color: white;
 }
 
-.skills-titulo-principal, .titulo{
+.skills__titulo-principal, .titulo{
     color: #484848;
     text-align: center;
     font-family: 'Anonymous Pro', monospace;
@@ -31,7 +29,7 @@
 
 
 
-.skills-flex-item, .skills-flex-item-diseño{
+.skills__flex-item, .skills__flex-item--diseño{
     display: flex;
     flex-direction: column;
     background-color: rgba(24, 24, 24, 0.829);
@@ -47,78 +45,78 @@
     
 }
 
-.skills-flex-item:hover, .skills-flex-item-diseño:hover{
+.skills__flex-item:hover, .skills__flex-item--diseño:hover{
     transform: scale(1.2);
 }
 
 
 
-.skills-flex-item i{
+.skills__flex-item i{
     width: 100%;
     font-size: 120px;
     transition: all 0.2s;
 }
 
-.skills-flex-item-diseño img {
+.skills__flex-item--diseño img {
     width: 120px;
 }
 
-.skills-flex-item:hover i {
+.skills__flex-item:hover i {
     font-size: 185px;
     text-align: center;
 }
 
-.skills-flex-item-diseño img{
+.skills__flex-item--diseño img{
     transition: all 0.2s;
 }
 
 
-.skills-flex-item-diseño:hover img{
+.skills__flex-item--diseño:hover img{
     width: 100%;
 }
 
-.skills-flex-item-diseño span{
+.skills__flex-item--diseño span{
     opacity: 1;
     transition: all 0.5s;
 }
 
-.skills-flex-item-diseño:hover span{
+.skills__flex-item--diseño:hover span{
     opacity: 0;
 }
 
-.skills-flex-item:first-child:hover i{
+.skills__flex-item:first-child:hover i{
    color: #f06529;
 }
 
-.skills-flex-item:nth-child(2):hover i{
+.skills__flex-item:nth-child(2):hover i{
     color: #2965f1
 }
 
-.skills-flex-item:nth-child(3):hover i{
+.skills__flex-item:nth-child(3):hover i{
     color: #f0db4f;
 }
 
-.skills-flex-item:nth-child(4):hover i{
+.skills__flex-item:nth-child(4):hover i{
     color: #7cc5d9;
 }
 
-.skills-flex-item:nth-child(5):hover i {
+.skills__flex-item:nth-child(5):hover i {
     color: #f34f29;
 }
 
 
-.skills-flex-item span, .skills-flex-item-diseño span {
+.skills__flex-item span, .skills__flex-item--diseño span {
     font-family: "Montserrat", sans-serif;
     align-self: flex-end;
     font-size: 18px;
     transition: all 0.1s;
 }
 
-.skills-flex-item:hover span{
+.skills__flex-item:hover span{
     opacity: 0;
 }
 
-.skills-flex-item-diseño{
+.skills__flex-item--diseño{
     background-color: #f3f3f3;
     border: 3px solid rgba(0, 0, 0, 0.589);
     color: black

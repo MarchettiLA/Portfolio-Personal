@@ -4,7 +4,7 @@ footer{
     border-top: double 20px rgba(35, 122, 1, 0.37);   
 }
 
-.contacto-contenedor-form-redes{
+.contacto__contenedor-form-redes{
     gap: 2rem;
 }
 
@@ -34,12 +34,12 @@ footer{
     background-color: rgba(255, 255, 255, 0.884) ;
 }
 
-.contacto-formulario-contenedor label{
+.contacto__formulario__contenedor label{
     margin-bottom: 0.5em;
     font-family: "Montserrat", sans-serif;
 }
 
-.contacto-formulario-contenedor input, .contacto-formulario-contenedor textarea {
+.contacto__formulario__contenedor input, .contacto__formulario__contenedor textarea {
     padding: 0.8em;
     border: none;
     border-bottom: 2px solid rgba(35, 122, 1, 0.5);
@@ -48,13 +48,13 @@ footer{
    
 }
 
-.contacto-formulario-contenedor input:hover, .contacto-formulario-contenedor textarea:hover{
+.contacto__formulario__contenedor input:hover, .contacto__formulario__contenedor textarea:hover{
     background: rgb(204,204,204);
     background: linear-gradient(180deg, rgba(204,204,204,0) 26%, rgba(204,204,204,1) 100%);
     
 }
 
-.contacto-formulario-contenedor input:focus, .contacto-formulario-contenedor textarea:focus{
+.contacto__formulario__contenedor input:focus, .contacto__formulario__contenedor textarea:focus{
     outline: none;
 }
 
@@ -71,12 +71,12 @@ footer{
     width:20%
 }
 
-.redes-links img{
+.redes__links img{
     margin-bottom: 0.5em;
     width: 40px
 }
 
-.redes-links span{
+.redes__links span{
     color: white;
     font-family: "Montserrat", sans-serif;
 }

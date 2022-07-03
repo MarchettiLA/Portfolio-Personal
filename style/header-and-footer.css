@@ -6,44 +6,44 @@ header{
     background-color: #101010;
 }
 
-nav {
+.header__nav {
     font-family: "Montserrat",sans-serif;
-    
-    
 }
 
-.nav-name{
+.nav__name{
     font-size: 1.5em;
     color: white;
     opacity: 0;
     transition: all 0.5s;
 }
 
-.nav-name:hover{
+.nav__name:hover{
     transform: scale(1.1);
 }
 
-.nav-item{
+.nav__item{
     list-style: none;
     transition: all 0.3s;
 }
 
 
 
-.nav-item:hover {
+.nav__item:hover {
     transform: scale(1.2); 
 }
 
-.nav-item a {
+.nav__item a {
     color: white;
     text-decoration: none;
 }
 
-.nav-item a b {
+.nav__item a b {
   color: orange;
 }
 
-.header-quien-soy{
+/* QUIEN SOY */
+
+.header__quien-soy{
     
     background-size: 100%;
     color: white;
@@ -58,22 +58,22 @@ nav {
     opacity: 0;
 }
 
-.quien-soy-presentacion{
+.quien-soy__presentacion{
     font-size: 52px;
     font-family: 'Raleway', sans-serif;
 }
 
-.presentacion-name{
+.presentacion__name{
     color: #ffa500;
 }
 
-.quien-soy-detalles{
+.quien-soy__detalles{
    margin-top: -1em;
    font-size: 2.5em;
    font-family: 'Kumbh Sans', sans-serif;
 }
 
-.quien-soy-detalles span{
+.quien-soy__detalles span{
     font-family: 'Kumbh Sans', sans-serif;
     width: auto;
     background-color: orange;
@@ -104,7 +104,7 @@ border-radius: 50%;
     left: 0;
    }
 
-.enlaces-link{
+.enlaces__link{
    font-size: 1em;
    font-family: 'Raleway', sans-serif;
    text-decoration: none;
@@ -113,78 +113,14 @@ border-radius: 50%;
    color: white;
 }
 
-.enlaces-link:hover{
+.enlaces__link:hover{
     color: rgb(35, 122, 1);
 }
 
-.enlaces-link i{
+.enlaces__link i{
     margin-right: 0.5em;
     font-size:1.5em;
 }
-
-.main-sobre-mi{
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-    transform: scaleX(0);   
-    transition: all 1s; 
-    min-height: 100vh;
-    height: auto;
-    background: linear-gradient(180deg, rgba(226,146,0,1) 0%, rgba(255,165,0,1) 50%, rgba(226,146,0,1) 100%);
-}
-
-.sobre-mi__tipografia{
-    width: 75%;
-    transition: all 1s; 
-    opacity: 0;
-    height: 40%;
-}
-
-.sobre-mi-titulo{
-    
-    text-align: right;
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 2.5em;
-    background: #222222;
-    color: white;
-    width: 41%;
-    border-radius: 4px;
-}
-
-
-.sobre-mi-parrafo{
-    text-align: justify;
-    width: 100%;
-    padding-left: 25%;
-    font-size: 1.5rem;
-    font-family: 'Kumbh Sans', sans-serif;
-}
-
-
-.sobre-mi__imagen{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    order: -1;
-    transition: all 1s;   
-    opacity: 0;  
-    height: 60vh;
-    box-shadow: 0px 5px 10px #1e1e1e99
-}
-    
-    
-
-
-.sobre-mi__imagen img{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-
-}
-
-
 
 
 /* RODAPIE */

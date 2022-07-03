@@ -1,0 +1,66 @@
+/* MAIN SOBRE MI */
+
+.main__sobre-mi{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: scaleX(0);   
+    transition: all 1s; 
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(180deg, rgba(226,146,0,1) 0%, rgba(255,165,0,1) 50%, rgba(226,146,0,1) 100%);
+}
+
+.sobre-mi__tipografia{
+    width: 75%;
+    transition: all 1s; 
+    opacity: 0;
+    height: 40%;
+}
+
+.sobre-mi__titulo{
+    
+    text-align: right;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 2.5em;
+    background: #222222;
+    color: white;
+    width: 41%;
+    border-radius: 4px;
+}
+
+
+.sobre-mi__parrafo{
+    text-align: justify;
+    width: 100%;
+    padding-left: 25%;
+    font-size: 1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.sobre-mi__imagen{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+    transition: all 1s;   
+    opacity: 0;  
+    height: 60vh;
+    box-shadow: 0px 5px 10px #1e1e1e99
+}
+    
+    
+
+
+.sobre-mi__imagen img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+}
+
+
+

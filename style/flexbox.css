@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100%;
     background-color: #101010;
@@ -11,7 +15,7 @@ header{
     margin: 0
 }
 
-.header-nav{
+.header__nav{
     display: flex;
     height: 15%;
     margin-bottom: 2em; 
@@ -19,7 +23,7 @@ header{
     align-items: center;
 }
 
-.nav-name{
+.nav__name{
     width: 27%;
     margin: 0;
     padding-left: 3%;
@@ -27,7 +31,7 @@ header{
     
 }
 
-.nav-lista{
+.nav__lista{
     display: flex;
     width: 67%;
     height: 100%;
@@ -37,11 +41,11 @@ header{
     align-items: center;
 }
 
-.nav-item{
+.nav__item{
     width: auto;
 }
 
-.header-quien-soy{
+.header__quien-soy{
     display: flex;
     height:  80%;
     width: 90%;
@@ -51,7 +55,7 @@ header{
     gap:10px
 }
 
-.quien-soy-tipografia{
+.quien-soy__tipografia{
     width: 60%;
     height: 100%;
     display: flex;
@@ -59,43 +63,47 @@ header{
     justify-content: center;
 }
 
-.quien-soy-enlaces{
+.quien-soy__enlaces{
     width: 100%;
     justify-content: space-around;
     display: flex;
 }
 
-.enlaces-link{
+.enlaces__link{
     width: 100%;
    
 }
 
+/* MAIN */
 
-.main-sobre-mi{
+
+.main__sobre-mi{
     width: 100%;
     margin: 0;
-    
-    
+
 }
 
-
-.sobre-mi-parrafo{
+.sobre-mi__parrafo{
     opacity: 1;
 }
 
-.main-conocimientos{
+/* MAIN SKILLS */
+
+.main__conocimientos{
     height: auto;
     box-shadow: inset 0px 5px 20px #242424;
     background: linear-gradient(180deg, rgba(68,68,68,1) 0%, rgba(85,85,85,1) 25%, rgba(98,98,98,1) 50%, rgba(85,85,85,1) 75%, rgba(68,68,68,1) 100%);
 }
 
 
-.main-conocimientos-skills{
+.main__conocimientos__skills{
     height: auto;
     padding-top: 2.5em;    
 }
 
-.skills-flex-container{
+
+
+.skills__flex-container{
     display: flex;
     height: 100%;
     justify-content: space-around;
@@ -107,12 +115,14 @@ header{
 }
 
 
-.skills-flex-item{
+.skills__flex-item{
     width: 200px;
     height: 200px;
 }
 
-.formacion-academica-flex-container{
+/* FORMACION ACADEMICA */
+
+.formacion-academica__flex-container{
     display: flex;
     height: auto;
     width: 90%;
@@ -122,20 +132,20 @@ header{
     gap: 2em;
 }
 
-.formacion-academica-item{
+.formacion-academica__item{
     width: 250px;
     height:80%;
     margin-bottom: 2em;
     
 }
 
-.formacion-academica-item-img img{
+.formacion-academica__item__img img{
     width: 100%;
     height: 80%;
     border-radius: 5%;
 }
 
-.formacion-academica-item-text{
+.formacion-academica__item__text{
     display: flex;
     flex-direction: column;
     height: 140px;
@@ -147,7 +157,7 @@ header{
 
 /* EXPERIENCIA PROFESIONAL */
 
-.experiencia-profesional-flex-containers{
+.experiencia-profesional__flex-containers{
     display: flex;
     width: 90%;
     margin: 0 5%;
@@ -158,7 +168,7 @@ header{
     
 }
 
-.experiencia-profesional-tipografia{
+.experiencia-profesional__tipografia{
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -194,7 +204,7 @@ footer{
     align-items: center;
 }
 
-.contacto-tipografia{
+.contacto__tipografia{
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -216,7 +226,7 @@ footer{
   
 }
 
-.contacto-formulario-contenedor{
+.contacto__formulario__contenedor{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -229,7 +239,7 @@ footer{
     align-self: flex-start;
 }
 
-.contacto-contenedor-form-redes{
+.contacto__contenedor-form-redes{
     width: 90%;
     padding: 0 5%;
     box-sizing: border-box;
@@ -246,7 +256,7 @@ footer{
     
 }
 
-.redes-links{
+.redes__links{
     display: flex;
     flex-direction: column;
     justify-content: center;

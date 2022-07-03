@@ -1,7 +1,7 @@
 
-const headerNav = document.querySelector(".header-nav");
+const headerNav = document.querySelector(".header__nav");
 const navMenuButton = document.createElement("div");
-navMenuButton.classList.add("nav-mobile-button");
+navMenuButton.classList.add("nav__mobile__button");
 const barras = document.createElement("i");
 barras.classList.add("fa-solid", "fa-bars", "nav-mobile-button__barras");
 
@@ -35,7 +35,7 @@ navMenuButton.addEventListener("click",()=>{
 
 // OPACIDAD LANDING ONLOAD
 
-const landingPage = document.querySelector(".header-quien-soy");
+const landingPage = document.querySelector(".header__quien-soy");
 
 const showLandingPage = () => {
     landingPage.classList.replace("invisible","visible")
@@ -45,8 +45,8 @@ window.addEventListener("load",showLandingPage);
 
 // OPACIDAD NAV MENU ONLOAD
 
-const navName = document.querySelector(".nav-name");
-const navItems = document.querySelectorAll(".nav-item");
+const navName = document.querySelector(".nav__name");
+const navItems = document.querySelectorAll(".nav__item");
 
 const showNavItems = () => {
     transitionSec = 0.5
@@ -66,7 +66,7 @@ const normalizeTransition = () => {
 }
 window.addEventListener("load", showNavItems)
 
-//OPACIDAD Y MOVIMIENTO
+//OPACIDAD Y MOVIMIENTO SOBRE MI SCROLL
 
 const aboutMeImg = document.querySelector(".sobre-mi__imagen");
 
@@ -83,7 +83,7 @@ window.addEventListener("scroll", showAboutMeImg);
 
 // TRANSICION SOBRE MI
 
-const aboutContainer = document.querySelector(".main-sobre-mi");
+const aboutContainer = document.querySelector(".main__sobre-mi");
 const aboutFont = document.querySelector(".sobre-mi__tipografia");
 const aboutImg = document.querySelector(".sobre-mi__imagen");
 const changeInsideOpacity = () => {

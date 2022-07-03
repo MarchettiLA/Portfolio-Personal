@@ -7,33 +7,33 @@
         height: auto;
     }
 
-     header .header-nav{
+     header .header__nav{
         flex-direction: column;
         height: 10%;
     }
 
-     .nav-name{
+     .nav__name{
         width: 100%;
         height: 2em;
         padding-top: 0.5em;
         font-size: 1.2rem;
     }
 
-    .nav-mobile-button{
+    .nav__mobile-button{
         position: absolute;
         right: 1.5rem;
         top: 0.75em;
              
     }
 
-    .nav-mobile-button i{
+    .nav__mobile-button i{
         font-size: 30px;
         color: white;
     }
 
    
 
-    .nav-lista{
+    .nav__lista{
         flex-direction: column;
         width: 80%;
         height: 30vh;
@@ -45,13 +45,15 @@
        
     }
 
-    .nav-item{
+    .nav__item{
         border-bottom: 3px double rgba(255, 166, 0, 0.726);
         width: 100%;
         text-align: center;
     }
 
-    .header-quien-soy{
+    /* QUIEN SOY */
+
+    .header__quien-soy{
         flex-direction: column;
         
     }
@@ -62,7 +64,7 @@
         margin-bottom: 2em;
     }
 
-    .quien-soy-tipografia{
+    .quien-soy__tipografia{
         width: auto;
         height: auto;
         display: flex;
@@ -71,34 +73,34 @@
         align-items: center;
     }
 
-    .quien-soy-enlaces{
+    .quien-soy__enlaces{
         margin: 1.5em;
     }
 
-    .enlaces-link{
+    .enlaces__link{
         text-align: center;
         font-size: 0.8em;
     }
 
-    .enlaces-link i{
+    .enlaces__link i{
         width: 100%;
     }
 
 
-    .quien-soy-presentacion{
+    .quien-soy__presentacion{
         text-align: center;
         width: 90%;
         margin-top: auto ;
     }
 
-    .quien-soy-detalles{
+    .quien-soy__detalles{
         text-align: center;
         font-size: 1.8em;
     }
     
     /* SOBRE MI */
 
-    .main-sobre-mi{
+    .main__sobre-mi{
         flex-direction: column;
         align-items: center;
     }
@@ -107,11 +109,11 @@
         width: 100%;
     }
 
-    .sobre-mi-titulo{
+    .sobre-mi__titulo{
         text-align: center;
     }
 
-    .sobre-mi-parrafo{
+    .sobre-mi__parrafo{
        
         align-self: center;
         width: 80%;
@@ -121,16 +123,19 @@
         height: 90%;
     }
    
+    /* Experiencia profesional */
 
-    .experiencia-profesional-flex-containers{
+    .experiencia-profesional__flex-containers{
         flex-direction: column;
     }
 
-    .experiencia-profesional-tipografia{
+    .experiencia-profesional__tipografia{
         width: 80%;
         order: -1;
         margin-bottom: -4em;
     }
+
+    /* CONTACTO */
 
     .contacto-contenedor-form-redes{
         flex-direction: column;

@@ -1,10 +1,10 @@
 /* FORMACION ACADEMICA */
 
-.main-formacion-academica{
+.main__formacion-academica{
     background: linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(232,232,232,1) 50%, rgba(243,243,243,1) 100%);
 }
 
-.formacion-academica-title{
+.formacion-academica__title{
     text-align: center;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 2rem;
@@ -12,41 +12,41 @@
     padding-top: 2em;
 }
 
-.formacion-academica-title h3{
+.formacion-academica__title h3{
     background-color: #414141;
     color: #f1f1f1;
 }
 
 
-.formacion-academica-item{
+.formacion-academica__item{
     transition: all 0.5s;
 }
 
-.formacion-academica-item:hover{
+.formacion-academica__item:hover{
     transform: scale(1.2);
 }
 
-.formacion-academica-item-text h3{
+.formacion-academica__item__text h3{
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     text-align: center;
 }
 
-.formacion-academica-item-text p{
+.formacion-academica__item__text p{
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
 }
 
 /* EXPERIENCIA PROFESIONAL */
 
-.main-experiencia-profesional{
+.main__experiencia-profesional{
     background-color: rgba(10, 10, 10, 0.829);
     padding: 2em 0;
     border-top: 6px solid rgba(35, 122, 1, 0.5);
     border-bottom: 12px double rgba(35, 122, 1, 0.74) ;
 }
 
-.main-experiencia-profesional h3 {
+.main__experiencia-profesional h3 {
     text-align: center;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 2rem;
@@ -54,22 +54,22 @@
     
 }
 
-.experiencia-profesional-tipografia{
+.experiencia-profesional__tipografia{
     font-family: 'Raleway', sans-serif;
     color: white;
 }
 
-.experiencia-profesional-tipografia h3{
+.experiencia-profesional__tipografia h3{
     font-size: 1.5em;
 }
 
-.experiencia-profesional-botones{
+.experiencia-profesional__botones{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.botones-item {
+.botones__item {
     width: 45%;
     margin: 1% 2%;
     height: 3em;
@@ -77,16 +77,16 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.botones-item:first-child{
+.botones__item:first-child{
     border: 2px solid rgba(35, 122, 1, 0.5);
 }
 
-.botones-item:nth-child(2){
+.botones__item:nth-child(2){
     background-color: rgba(35, 122, 1, 0.5);
     color: white;
     
 }
 
-.experiencia-profesional-flex-containers img{
+.experiencia-profesional__flex-containers img{
     border-radius: 12px;
 }
