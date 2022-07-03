@@ -75,8 +75,13 @@
         align-items: center;
     }
 
+    .quien-soy__tipografia h1, .quien-soy__tipografia h3{
+      
+        text-align: center;
+    }
+
     .quien-soy__enlaces{
-        margin: 1.5em;
+        margin: 3rem;
     }
 
     .enlaces__link{

@@ -64,7 +64,7 @@ header{
     font-family: 'Raleway', sans-serif;
     font-size: 3.5rem;
     margin: .2rem 0;
-    text-align: center;
+    text-align: left;
 }
 
 .presentacion__name{
@@ -86,7 +86,7 @@ header{
 }
 
 .quien-soy__retrato{
-    width: 40%;
+    width: 35%;
     position: relative;
 }
 
