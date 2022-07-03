@@ -1,0 +1,127 @@
+/* SKILLS */ 
+
+.main-conocimientos{
+    background-color: #f3f3f3;
+   
+}
+
+.main-conocimientos-diseño{
+    
+    padding: 1em;
+}
+
+.skills-titulo{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.skills-titulo-principal{
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0.5em 0;  
+    color: white;  
+    padding-top: 2em;
+}
+
+
+.skills-flex-item, .skills-flex-item-diseño{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(24, 24, 24, 0.829);
+    box-shadow: 4px 5px 8px #3e3e3e;
+    border-radius: 5%;
+    padding: 10px;
+    justify-content: space-between;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    color: white;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.skills-flex-item:hover, .skills-flex-item-diseño:hover{
+    transform: scale(1.2);
+}
+
+
+
+.skills-flex-item i{
+    width: 100%;
+    font-size: 120px;
+    transition: all 0.2s;
+}
+
+.skills-flex-item-diseño img {
+    width: 120px;
+}
+
+.skills-flex-item:hover i {
+    font-size: 185px;
+    text-align: center;
+}
+
+.skills-flex-item-diseño img{
+    transition: all 0.2s;
+}
+
+
+.skills-flex-item-diseño:hover img{
+    width: 100%;
+}
+
+.skills-flex-item-diseño span{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.skills-flex-item-diseño:hover span{
+    opacity: 0;
+}
+
+.skills-flex-item:first-child:hover i{
+   color: #f06529;
+}
+
+.skills-flex-item:nth-child(2):hover i{
+    color: #2965f1
+}
+
+.skills-flex-item:nth-child(3):hover i{
+    color: #f0db4f;
+}
+
+.skills-flex-item:nth-child(4):hover i{
+    color: #7cc5d9;
+}
+
+.skills-flex-item:nth-child(5):hover i {
+    color: #f34f29;
+}
+
+
+.skills-flex-item span, .skills-flex-item-diseño span {
+    font-family: "Montserrat", sans-serif;
+    align-self: flex-end;
+    font-size: 18px;
+    transition: all 0.1s;
+}
+
+.skills-flex-item:hover span{
+    opacity: 0;
+}
+
+.skills-flex-item-diseño{
+    background-color: #f3f3f3;
+    border: 3px solid rgba(0, 0, 0, 0.589);
+    color: black
+}
+
+
+
+
+

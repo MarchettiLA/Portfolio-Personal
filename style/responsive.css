@@ -1,0 +1,122 @@
+@media (max-width: 1024px){
+
+    header{
+        min-height: 100vh;
+        height: auto;
+    }
+
+     header .header-nav{
+        flex-direction: column;
+        height: 10%;
+    }
+
+     .nav-name{
+        width: 100%;
+        height: 2em;
+        padding-top: 0.5em;
+        font-size: 1.2rem;
+    }
+
+    .nav-mobile-button{
+        position: absolute;
+        right: 1.5rem;
+        top: 0.75em;
+             
+    }
+
+    .nav-mobile-button i{
+        font-size: 30px;
+        color: white;
+    }
+
+   
+
+    .nav-lista{
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        transition: all 1s;
+        opacity: 0;
+        height: 0;
+    }
+
+    .header-quien-soy{
+        flex-direction: column;
+        
+    }
+
+    .quien-soy__retrato{
+        order: -1;
+        width: 55%;
+        margin-bottom: 2em;
+    }
+
+    .quien-soy-tipografia{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enlaces-link{
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .enlaces-link i{
+        width: 100%;
+    }
+
+    .quien-soy-presentacion{
+        text-align: center;
+        width: 90%;
+        margin-top: auto ;
+    }
+
+    .quien-soy-detalles{
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    
+   
+
+    .experiencia-profesional-flex-containers{
+        flex-direction: column;
+    }
+
+    .experiencia-profesional-tipografia{
+        width: 80%;
+        order: -1;
+        margin-bottom: -4em;
+    }
+
+    .contacto-contenedor-form-redes{
+        flex-direction: column;
+
+    }
+
+    .contacto .contacto-formulario{
+        width: 100%;
+    }
+
+    .contenedor-redes{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .redes-links{
+        width: 45%;
+    }
+
+    .redes-links:last-child{
+        font-size: 14px;
+    }
+    
+}
+

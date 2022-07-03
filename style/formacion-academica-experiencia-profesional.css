@@ -1,0 +1,91 @@
+/* FORMACION ACADEMICA */
+
+.main-formacion-academica{
+    background: linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(232,232,232,1) 50%, rgba(243,243,243,1) 100%);
+}
+
+.formacion-academica-title{
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2em;
+    padding-top: 2em;
+
+}
+
+.formacion-academica-title h3 {
+    margin: 0;
+}
+
+.formacion-academica-item{
+    transition: all 0.5s;
+}
+
+.formacion-academica-item:hover{
+    transform: scale(1.2);
+}
+
+.formacion-academica-item-text h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.formacion-academica-item-text p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+/* EXPERIENCIA PROFESIONAL */
+
+.main-experiencia-profesional{
+    background-color: rgba(10, 10, 10, 0.829);
+    padding: 2em 0;
+    border-top: 6px solid rgba(35, 122, 1, 0.5);
+    border-bottom: 12px double rgba(35, 122, 1, 0.74) ;
+}
+
+.main-experiencia-profesional h3 {
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    
+}
+
+.experiencia-profesional-tipografia{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.experiencia-profesional-tipografia h3{
+    font-size: 1.5em;
+}
+
+.experiencia-profesional-botones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botones-item {
+    width: 45%;
+    margin: 1% 2%;
+    height: 3em;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.botones-item:first-child{
+    border: 2px solid rgba(35, 122, 1, 0.5);
+}
+
+.botones-item:nth-child(2){
+    background-color: rgba(35, 122, 1, 0.5);
+    color: white;
+    
+}
+
+.experiencia-profesional-flex-containers img{
+    border-radius: 12px;
+}

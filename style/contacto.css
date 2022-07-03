@@ -1,0 +1,83 @@
+/* CONTACTO */
+footer{
+    background-color: rgba(10, 10, 10, 0.829);
+    border-top: double 20px rgba(35, 122, 1, 0.37);   
+}
+
+.contacto-contenedor-form-redes{
+    gap: 2rem;
+}
+
+.contacto h3 {
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.contacto p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    border: 6px double  rgba(35, 122, 1, 0.5);
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 12px;
+    
+    
+}
+
+.contacto form {
+    width: 80%;
+    border-radius: 24px;
+    padding: 2em 10%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.884) ;
+}
+
+.contacto-formulario-contenedor label{
+    margin-bottom: 0.5em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contacto-formulario-contenedor input, .contacto-formulario-contenedor textarea {
+    padding: 0.8em;
+    border: none;
+    border-bottom: 2px solid rgba(35, 122, 1, 0.5);
+    background-color: transparent;
+    transition: all 0.5s;
+   
+}
+
+.contacto-formulario-contenedor input:hover, .contacto-formulario-contenedor textarea:hover{
+    background: rgb(204,204,204);
+    background: linear-gradient(180deg, rgba(204,204,204,0) 26%, rgba(204,204,204,1) 100%);
+    
+}
+
+.contacto-formulario-contenedor input:focus, .contacto-formulario-contenedor textarea:focus{
+    outline: none;
+}
+
+.contacto button{
+    padding: 1.5em;
+    border-radius: 12px;
+    background-color: rgba(35, 122, 1, 0.5);
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    margin: 0 10% ;
+}
+
+.contenedor-redes{
+    width:20%
+}
+
+.redes-links img{
+    margin-bottom: 0.5em;
+    width: 40px
+}
+
+.redes-links span{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
