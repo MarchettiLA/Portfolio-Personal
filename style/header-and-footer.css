@@ -18,7 +18,7 @@ header{
 }
 
 .nav__name:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .nav__item{
@@ -63,7 +63,8 @@ header{
 .quien-soy__tipografia h1, .quien-soy__tipografia h3{
     font-family: 'Raleway', sans-serif;
     font-size: 3.5rem;
-    margin: .2rem 0
+    margin: .2rem 0;
+    text-align: center;
 }
 
 .presentacion__name{

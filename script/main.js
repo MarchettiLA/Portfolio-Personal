@@ -56,7 +56,7 @@ const navItemsLinks = document.querySelectorAll(".nav__item a")
 
 for (let i=0;i<navItems.length;i++){
         navItems[i].addEventListener("click", ()=>{
-        if (ready && document.innerWidth < 885){
+        if (ready && window.innerWidth <= 885){
             navMenuButton.click();
             setTimeout(()=>{
                 navItemsLinks[i].href = urls[i];
