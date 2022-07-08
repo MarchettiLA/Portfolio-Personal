@@ -37,7 +37,8 @@ footer{
 .contacto__formulario__contenedor label{
     margin-bottom: 0.5em;
     font-family: "Montserrat", sans-serif;
-    transition: all 1s;
+    transition: all .5s;
+    order: -1;
 }
 
 .contacto__formulario__contenedor input, .contacto__formulario__contenedor textarea {
@@ -51,8 +52,6 @@ footer{
    
 }
 
-
-
 .contacto__formulario__contenedor input:hover, .contacto__formulario__contenedor textarea:hover{
     background: none;
    
@@ -65,15 +64,16 @@ footer{
     position: absolute;
     bottom: 8px;
     transition: all 1s ease-in-out;
+    z-index:  1000;
 }
 
-.contacto__formulario__contenedor:hover span{
+.contacto__formulario__contenedor > .contacto__formulario__contenedor__input:focus ~ span{
     width: 97.5%;
 }
 
-.contacto__formulario__contenedor:hover label {
+.contacto__formulario__contenedor > .contacto__formulario__contenedor__input:focus  + label{
     color: orange;
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 
 .contacto__formulario__contenedor input:focus, .contacto__formulario__contenedor textarea:focus{
