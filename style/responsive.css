@@ -135,10 +135,11 @@
 
     .experiencia-profesional__flex-containers{
         flex-direction: column;
+        height: auto;
     }
 
     .experiencia-profesional__tipografia{
-        width: 80%;
+        width: 70%;
         order: -1;
         margin-bottom: -4em;
     }

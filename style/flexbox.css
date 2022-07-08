@@ -234,6 +234,7 @@ footer{
     padding: 0.5em;
     margin: 0.5em;
     box-sizing: border-box;
+    position: relative;
 }
 
 .contacto button {
