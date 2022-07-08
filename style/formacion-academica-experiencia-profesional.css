@@ -1,7 +1,36 @@
 /* FORMACION ACADEMICA */
 
 .main__formacion-academica{
-    background: #f3f3f3
+    --borderWidth: 7px;
+    margin: var(--borderWidth) 0;
+    background: url("../img/textura-5.png");
+    position: relative;
+}
+
+.main__formacion-academica::after{
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .formacion-academica__title{
@@ -14,7 +43,7 @@
 
 .formacion-academica__title h3{
     background-color: #414141;
-    color: #f1f1f1;
+    color: #eeeeee;
 }
 
 
@@ -42,8 +71,7 @@
 .main__experiencia-profesional{
     background: url("../img/textura-2.png");
     padding: 2em 0;
-    border-top: 6px solid orange;
-    border-bottom: 12px double orange ;
+  
 }
 
 .experiencia-profesional__tipografia h3 {
