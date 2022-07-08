@@ -1,7 +1,7 @@
 /* FORMACION ACADEMICA */
 
 .main__formacion-academica{
-    background: linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(232,232,232,1) 50%, rgba(243,243,243,1) 100%);
+    background: #f3f3f3
 }
 
 .formacion-academica__title{
@@ -40,21 +40,22 @@
 /* EXPERIENCIA PROFESIONAL */
 
 .main__experiencia-profesional{
-    background-color: rgba(10, 10, 10, 0.829);
+    background: url("../img/textura-2.png");
     padding: 2em 0;
     border-top: 6px solid orange;
     border-bottom: 12px double orange ;
 }
 
-.main__experiencia-profesional h3 {
+.experiencia-profesional__tipografia h3 {
     text-align: center;
-    color: #0b0b0b;
+    color: #ffffff;
     
 }
 
 .experiencia-profesional__tipografia{
     font-family: 'Raleway', sans-serif;
     color: white;
+    text-align: center;
 }
 
 .experiencia-profesional__tipografia h3{

@@ -1,7 +1,7 @@
 /* SKILLS */ 
 
 .main__conocimientos{
-    background-color: #f3f3f3;
+    background-image: url(../img/textura-1.png);
 }
 
 .main__conocimientos--diseño{
@@ -16,7 +16,7 @@
 }
 
 .skills__titulo-principal, .titulo{
-    color: #484848;
+    color: #191919;
     text-align: center;
     font-family: 'Anonymous Pro', monospace;
     background: orange;
@@ -32,8 +32,8 @@
 .skills__flex-item, .skills__flex-item--diseño{
     display: flex;
     flex-direction: column;
-    background-color: rgba(24, 24, 24, 0.829);
-    box-shadow: 4px 5px 8px #3e3e3e;
+    background-color: rgb(24 24 24 / 95%);
+    box-shadow: 4px 5px 8px #00000094;
     border-radius: 5%;
     padding: 10px;
     justify-content: space-between;
@@ -118,7 +118,6 @@
 
 .skills__flex-item--diseño{
     background-color: #f3f3f3;
-    border: 3px solid rgba(0, 0, 0, 0.589);
     color: black
 }
 

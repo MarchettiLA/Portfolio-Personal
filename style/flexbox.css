@@ -159,13 +159,14 @@ header{
 
 .experiencia-profesional__flex-containers{
     display: flex;
-    width: 90%;
-    margin: 0 5%;
-    height: auto;
+    width: 100%;
+    margin: 3em 0;
+    height: 370px;
     justify-content: center;
     align-items: center;
     gap: 2.5%;
-    
+    background: #64646473;
+    padding: 2em;
 }
 
 .experiencia-profesional__tipografia{
