@@ -12,7 +12,11 @@ footer{
     text-align: center;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 2rem;
-    color: white;
+    font-family: 'Anonymous Pro';
+    background: #f69f00;
+    margin: 1em auto;
+    width: 50%;
+    color: #343434;
 }
 
 .contacto p {

@@ -1,96 +1,48 @@
-.slider-container{
-    height: 507px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0 4em;
-    padding: 2em
-}
-
-.slider-container__img{
-    width: 100%;
-    height: 65%;
-    position: relative; 
-    display: flex;  
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider-container__img img{
-    width: 100%;
+.carousel{
     height: 100%;
-    position: absolute;    
-    object-fit: scale-down;
-    transition: all 0.3s;
-    opacity: 0;
-    
+    width: 100%;
 }
 
-.slider-container__img img:first-child{
-    opacity: 1;
+.carousel-inner{
+    height: 100%;
 }
 
-
-.slider-container__menu{
-    display: flex;
-    width: 65%;
-    align-items: center;
-    justify-content: center;
+.carousel-item{
+    height: 100%;
 }
 
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit:contain
+}
 
-
-.slider-container__menu button{
-    width: 40px ;
-    height: 40px;  
+#prev{
+    background-color: black;
     border-radius: 50%;
-    border: 2px solid orange;
-    color: white;
-    background-color: transparent;
-    position: absolute;
-    text-align: center;
-    vertical-align: middle;
-    
+    height: 2em;
+    margin: auto 0;
+    left: 2em;
+    padding: .5em;
+    width: 2em;
 }
 
-.slider-container__menu button:first-child{
-    top: 50% ;
-    left: -5%;
-    
+#next{
+    background-color: black;
+    border-radius: 50%;
+    height: 2em;
+    margin:auto 0;
+    padding: .5em;
+    right: 2em;
+    width: 2em;
 }
 
-.slider-container__menu button:nth-child(2){
-    top: 50% ;
-    right: -5%;
-}
+@media (max-width: 1024px) {
+    #carouselExampleIndicators{
+        margin-top: 3em;
+    }
 
-.slider-container__menu button:hover{
-    background-color: orange;
-    border: 2px solid white;
-}
-
-
-.menu__line:hover{
-    background-color: orange;
-}
-
-
-
-
-.menu__line a{
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    font-size: 12px;
-}
-
-@media (max-width: 885px){
-    .slider-container{
-        width: 90%;
+    .carousel-item img{
+        max-height: 640px;
     }
 }
-
