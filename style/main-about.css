@@ -1,5 +1,11 @@
 /* MAIN SOBRE MI */
 
+main{
+    
+    background: #101010;
+
+}
+
 .main__sobre-mi{
     font-family: 'Raleway', sans-serif;
     display: flex;
@@ -33,7 +39,6 @@
 
 
 .sobre-mi__parrafo{
-    text-align: justify;
     width: 100%;
     padding-left: 25%;
     font-size: 1.5rem;
