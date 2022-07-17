@@ -18,18 +18,16 @@ header{
 }
 
 .nav__name:hover{
-    transform: scale(1.03);
+    font-size: 1.7em;
 }
 
 .nav__item{
     list-style: none;
-    transition: all 0.3s;
+    backface-visibility: hidden;
 }
 
-
-
-.nav__item:hover {
-    transform: scale(1.2); 
+.nav__item:hover  {
+    font-size: 1.2em;
 }
 
 .nav__item a {
