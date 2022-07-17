@@ -37,6 +37,10 @@ header{
     text-decoration: none;
 }
 
+.nav__item a:hover{
+    color: white;
+}
+
 .nav__item a b {
   color: orange;
 }

@@ -17,7 +17,7 @@ headerNav.appendChild(navMenuButton);
 navMenuButton.appendChild(barras);
 
 const responsiveInterval = () =>{
-    if (window.innerWidth > 885){
+    if (window.innerWidth > 1340){
         navMenuButton.style.display = "none"
     } else {
         navMenuButton.style.display = "inline-block"

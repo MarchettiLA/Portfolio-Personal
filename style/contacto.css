@@ -1,6 +1,6 @@
 /* CONTACTO */
 footer{
-    background-color: rgba(10, 10, 10, 0.829);
+    background-color:  rgb(0 0 0 / 89%);
     border-top: double 20px orange  
 }
 
@@ -17,6 +17,7 @@ footer{
     margin: 1em auto;
     width: 50%;
     color: #343434;
+    border-radius: 4px;
 }
 
 .contacto p {
@@ -91,6 +92,7 @@ footer{
     font-family: "Montserrat", sans-serif;
     width: 80%;
     margin: 0 10% ;
+    border: none;
 }
 
 .contacto__formulario--submited{
