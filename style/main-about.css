@@ -12,7 +12,7 @@ main{
     flex-direction: column;
     opacity: 0;
     transform: scaleX(0);   
-    transition: all 1s; 
+    transition: all .5s; 
     min-height: 100vh;
     height: auto;
     background: linear-gradient(180deg, rgba(226,146,0,1) 0%, rgba(255,165,0,1) 50%, rgba(226,146,0,1) 100%);
