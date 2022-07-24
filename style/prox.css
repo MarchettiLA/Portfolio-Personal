@@ -1,0 +1,31 @@
+.proximamente__header{
+    padding-bottom: 0;
+}
+
+.proximamente__main{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proximamente__container{
+    width: 100%;
+}
+
+.proximamente__container i{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.proximamente__titulo{
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    width: 100%;
+}

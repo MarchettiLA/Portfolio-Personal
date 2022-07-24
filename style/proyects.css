@@ -1,5 +1,5 @@
 .main__proyectos{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .main__proyectos h3{
