@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="style/contacto.css">
     <link rel="stylesheet" href="style/sliders.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/proyects.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -34,14 +35,24 @@
 <body>
     <header>
         <nav class="header__nav">
-            <h3 class="nav__name">Lautaro Marchetti</h3>
+            <h3 class="nav__name"><a href="index.html">Lautaro Marchetti</a></h3>
             <ul class="nav__lista" >
-                <li class="nav__item invisible"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="nav__item invisible"><a href="#web">Desarrollo Web</a></li>
-                <li class="nav__item invisible"><a href="#design">Diseño Gráfico</a></li>
-                <li class="nav__item invisible"><a href="#formacion">Formación</a></li>
-                <li class="nav__item invisible"><a href="#proyectos">Proyectos</a></li>
-                <li class="nav__item invisible"><a href="#contacto"><b>lautaroamarchetti@gmail.com</b></a></li>
+                <li class="nav__item invisible"><a href="index.html#sobre-mi" class="nav__item--link">Sobre mi</a></li>
+                <li class="nav__item invisible"><a href="index.html#skills" class="nav__item--link">Skills</a></li>
+                <li class="nav__item invisible"><a href="index.html#formacion" class="nav__item--link">Formación</a></li>
+                <li class="nav__item invisible">
+                    <ul class="proyectos__container">
+                        <li class="proyectos__item--selected"><a href="index.html#proyectos" class="nav__item--link">Proyectos</a></li>
+                        <div class="proyectos__item-container">
+                            <li class="proyectos__item"><a href="design.html" class="nav__item--link">Diseño</a></li>
+                            <li class="proyectos__item"><a href="web-dev.html" class="nav__item--link">Desarrollo Web</a></li>
+                           <!-- <li class="proyectos__item"><a href="photography.html" class="nav__item--link">Fotografía</a></li>-->
+                        </div>
+                       
+                    </ul>
+                    <i class="fa-solid fa-angle-down" id="select-arrow"></i>                  
+                </li>
+                <li class="nav__item invisible"><a href="#contacto" class="nav__item--link"><b>lautaroamarchetti@gmail.com</b></a></li>
             </ul>
         </nav>
         <section class="header__quien-soy invisible">
@@ -64,7 +75,7 @@
             </div>
 
             <div class="quien-soy__retrato">
-                <img src="img/me4.jpg" alt="">
+                <img src="img/misc/me4.jpg" alt="">
             </div>
              
             
@@ -80,11 +91,11 @@
                     experiencia laboral en el área IT para continuar aprendiendo y poner el practica todos mis conocimientos.</p>
             </div>
             <div class="sobre-mi__imagen invisible">
-                <img src="img/teclado.jpg" alt="">
+                <img src="img/misc/teclado.jpg" alt="">
             </div>
         </section>
 
-        <section class="main__conocimientos">
+        <section class="main__conocimientos" id="skills">
             <div class="main__conocimientos__skills" >
                 <h2 class="skills__titulo-principal">Skills</h2>
                 <h4 class="skills__titulo" id="web">Desarrollo Web</h4>
@@ -116,27 +127,27 @@
                 <h4 class="skills__titulo">Diseño Gráfico</h4>
                 <div class="skills__flex-container">
                     <div class="skills__flex-item--diseño">
-                        <img src="img/corel-draw.png" alt="">
+                        <img src="img/misc/corel-draw.png" alt="">
                         <span>CorelDRAW</span>
                     </div>
                     <div class="skills__flex-item--diseño">
-                       <img src="img/photoshop.png" alt="">
+                       <img src="img/misc/photoshop.png" alt="">
                         <span>Adobe Photoshop</span> 
                     </div>
                     <div class="skills__flex-item--diseño">
-                        <img src="img/figma.png" alt="">
+                        <img src="img/misc/figma.png" alt="">
                         <span>Figma</span>
                     </div>
                     <div class="skills__flex-item--diseño">
-                        <img src="img/premiere-pro.png" alt="">
+                        <img src="img/misc/premiere-pro.png" alt="">
                         <span>Adobe Premiere</span>
                     </div>
                     <div class="skills__flex-item--diseño">
-                        <img src="img/after-effects1.png" alt="">
+                        <img src="img/misc/after-effects1.png" alt="">
                         <span>Adobe After Effects</span>
                     </div>
                     <div class="skills__flex-item--diseño">
-                        <img src="img/lightroom.png" alt="">
+                        <img src="img/misc/lightroom.png" alt="">
                         <span>Adobe Lightroom</span>
                     </div>
                 </div>
@@ -146,12 +157,12 @@
         </section>
         <section class="main__formacion-academica" id="formacion">
             <div class="formacion-academica__title">
-                <h3 class="titulo">Formación Academica</h3>
+                <h3 class="titulo">Formación</h3>
             </div>
             <div class="formacion-academica__flex-container">
                 <div class="formacion-academica__item">
                     <div class="formacion-academica__item__img">
-                        <img src="img/argentina-programa.jpg" alt="Argentina Programa - Logo">
+                        <img src="img/misc/argentina-programa.jpg" alt="Argentina Programa - Logo">
                     </div>
                     <div class="formacion-academica__item__text">
                         <h3>Introduccion a la Programación </h3>
@@ -160,7 +171,7 @@
                 </div>
                 <div class="formacion-academica__item">
                     <div class="formacion-academica__item__img">
-                        <img src="img/open-bootcamp.jpg" alt="Open Bootcamp - Logo">
+                        <img src="img/misc/open-bootcamp.jpg" alt="Open Bootcamp - Logo">
                     </div>
                     <div class="formacion-academica__item__text">
                         <h3>JavaScript Basico</h3>
@@ -169,7 +180,7 @@
                 </div>
                 <div class="formacion-academica__item">
                     <div class="formacion-academica__item__img">
-                        <img src="img/oracle-one.jpeg" alt="Oracle One - Logo">
+                        <img src="img/misc/oracle-one.jpeg" alt="Oracle One - Logo">
                     </div>
                     <div class="formacion-academica__item__text">
                         <h3>FullStack Developer</h3>
@@ -178,7 +189,7 @@
                 </div>
                 <div class="formacion-academica__item">
                     <div class="formacion-academica__item__img">
-                        <img src="img/freecodecamp-logo.png" alt="freeCodeCamp - Logo">
+                        <img src="img/misc/freecodecamp-logo.png" alt="freeCodeCamp - Logo">
                     </div>
                     <div class="formacion-academica__item__text">
                         <h3>Front End Development Libraries</h3>
@@ -187,7 +198,7 @@
                 </div>
                 <div class="formacion-academica__item">
                     <div class="formacion-academica__item__img">
-                        <img src="img/artes-visuales.jpg" alt="freeCodeCamp - Logo">
+                        <img src="img/misc/artes-visuales.jpg" alt="freeCodeCamp - Logo">
                     </div>
                     <div class="formacion-academica__item__text">
                         <h3>Diseñador Gráfico</h3>
@@ -197,119 +208,38 @@
             
         </section>
        
-        <section class="main__experiencia-profesional" id="proyectos">
-            <h3 class="titulo">Experiencia Profesional</h3>
-            <div class="experiencia-profesional__flex-containers">
-                <div class="experiencia-profesional__tipografia">
-                    <h3>Ahorcado</h3>
-                    <p>Challange Oracle ONE</p>
-                    <p>Realizado con HTML, CSS y Bootstrap y JavaScript</p>
-                    <div class="experiencia-profesional__botones">
-                        <button class="botones__item"><a href="https://github.com/MarchettiLA/Ahorcado-Challange-2-Oracle-Alura">Ir a repositorio</a></button>
-                        <button class="botones__item"><a href="https://marchettila.github.io/Ahorcado-Challange-2-Oracle-Alura/">Ver demo</a></button>
-                    </div>
-                </div>
-                <div id="carouselExample1" class="carousel slide carousel-fade" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExample1" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExample1" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/ahorcado-desktop-2.png" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="img/ahorcado-mobile1.png" alt="Second slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" id="prev" href="#carouselExample1" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                    </a>
-                    <a class="carousel-control-next" id="next" href="#carouselExample1" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                    </a>
-                </div>
-            </div>
-    
+        <section class="main__proyectos" id="proyectos">
 
-            
-            
-            <div class="experiencia-profesional__flex-containers">
+            <div class="proyectos__flex">
                 
-                <div id="carouselExample2" class="carousel slide carousel-fade" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExample2" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExample2" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/encriptador-mobile.png" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="img/encriptador-desktop-1.png" alt="Second slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" id="prev" href="#carouselExample2" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                    </a>
-                    <a class="carousel-control-next" id="next" href="#carouselExample2" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                    </a>
-                </div>
-
-                <div class="experiencia-profesional__tipografia">
-                    <h3>Encriptador</h3>
-                    <p>Challange Oracle ONE</p>
-                    <p>Realizado con HTML, CSS y JavaScript</p>
-                    <div class="experiencia-profesional__botones">
-                        <button class="botones__item"><a href="https://github.com/MarchettiLA/Encriptador-Challange-1-Oracle-Alura-">Ir a repositorio</a></button>
-                        <button class="botones__item"><a href="https://marchettila.github.io/Encriptador-Challange-1-Oracle-Alura-/">Ver demo</a></button>
-                    </div>
+                <div class="wrapper desarrollo">
+      
+                    <div class="clip-text clip-text_one desarrollo"><a href="web-dev.html">DESARROLLO WEB</a></div>
+               
                 </div>
                 
             </div>
-            
-            <div class="experiencia-profesional__flex-containers">
-                <div class="experiencia-profesional__tipografia">
-                    <h3>freeCodeCamp - Replica testimonios</h3>
-                    <p>freeCodeCamp React</p>
-                    <p>Realizado React.js</p>
-                    <div class="experiencia-profesional__botones">
-                        <button class="botones__item"><a href="https://github.com/MarchettiLA/testimonios-freeCodeCamp">Ir a repositorio</a></button>
-                        <button class="botones__item"><a href="https://marchettila.github.io/testimonios-freeCodeCamp/">Ver demo</a></button>
-                    </div>
-                </div>
 
-                <div id="carouselExample3" class="carousel slide carousel-fade" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExample3" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExample3" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/freecodecampMobile.png" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="img/freecodecamp-desktop.png" alt="Second slide">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" id="prev" href="#carouselExample3" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                    </a>
-                    <a class="carousel-control-next" id="next" href="#carouselExample3" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only"></span>
-                    </a>
+            <div class="proyectos__flex">
+                
+                <div class="wrapper diseño">
+      
+                    <div class="clip-text clip-text_one diseño"><a href="design.html">DISEÑO GRÁFICO</a></div>
+               
                 </div>
+                
+            </div>
 
-            </div>  
-            
-           
+            <div class="proyectos__flex fotografia">
+                
+                <div class="wrapper fotografia">
+      
+                    <div class="clip-text clip-text_one fotografia"><a href="photography.html">FOTOGRAFÍA</a></div>
+               
+                </div>
+                
+            </div>
+        </section>  
            
             
 
@@ -379,8 +309,11 @@
 </body>
 <script src="script/slider.js"></script>
 <script src="script/main.js"></script>
+<script src="script/main-landing.js"></script>
+<script src="script/main-scroll-animation.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="script/writing-profession.js"></script>
 <script src="script/form-logic.js"></script>
+
 
 </html>

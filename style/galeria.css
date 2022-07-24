@@ -1,0 +1,117 @@
+main{
+    min-height: 90vh;
+    height: auto;
+    width: 100vw;
+}
+
+/* FLEX CONTAINER */
+
+.main__flex-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    padding: 2em;
+    position: relative;
+}
+
+.return-button__container{
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0.5em;
+    left: 3em;
+    transition: all .5s;
+    width: 40px;
+    height: 40px;
+}
+
+.return-button__container:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.return-button__container i {
+    color: orange;
+    font-size: 1.5em;
+    padding: .2em;
+}
+
+
+.main__flex-item{
+    height: 400px;
+    width: 600px;
+    background: #1e1e1e73;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 24px;
+    transition: all 1s;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.flex-item__img{
+    width: 100%;
+    height: 80%;
+    transition: all .5s;
+}
+
+.flex-item__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px 24px 0 0;
+}
+
+.flex-item__text{
+    border-top: 2px solid orange;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content: center;
+    padding: 1em;
+    transition: all .5s;
+    
+}
+
+.flex-item__text .text__title {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    margin-top: 0.5em;
+    transition: height .5s;
+}
+
+.flex-item__text .text__details{
+    opacity: 0;
+    height: 0;
+    transition: opacity .2s, height .6s;
+}
+
+/* HOVERS FLEX ITEMS */
+
+.main__flex-item:hover .flex-item__img{
+    height: 30%;
+}
+.main__flex-item:hover .flex-item__text{
+    height: 70%;
+}
+
+.main__flex-item:hover .flex-item__text .text__title{
+    height: 30%;
+}
+
+.main__flex-item:hover .flex-item__text .text__details{
+    display: block;
+    opacity: 1;
+    height: 70%;
+    transition: opacity 1s, height .3s;
+}
+

@@ -3,13 +3,13 @@
 /* HEADER y NAV */
 
     header{
-        min-height: 100vh;
         height: auto;
     }
 
      header .header__nav{
         flex-direction: column;
         height: 10%;
+        padding: 0;
     }
 
      .nav__name{
@@ -17,12 +17,13 @@
         height: 2em;
         padding-top: 0.5em;
         font-size: 1.2rem;
+        margin: 0.5em 0;
     }
 
     .nav__mobile-button{
         position: absolute;
         right: 1.5rem;
-        top: 0.75em;
+        top: 1em;
         opacity: 0;
         transition: all 1s;
         transform: none;
@@ -42,9 +43,8 @@
         transition: all 1s;
         opacity: 0;
         height: 0;
-        margin-top: 2em;
+        margin: 2em 0;
         padding: 0;
-       
     }
 
     .nav__item{
@@ -53,11 +53,29 @@
         text-align: center;
     }
 
+    .nav__item--link{
+        display: none;
+    }
+
+    .proyectos__item-container {
+        position: relative;
+        margin: 0.2em;
+        
+    }
+
+    #select-arrow{
+        color: white;
+        position: absolute;
+        right: 100px;
+        top: 0;
+        
+   }
+
     /* QUIEN SOY */
 
     .header__quien-soy{
         flex-direction: column;
-        
+        height: 90%;
     }
 
     .quien-soy__retrato{
@@ -176,16 +194,16 @@
 
 @media (min-width :1024px ) and (max-width: 1340px){
     header{
-        min-height: 100vh;
         height: auto;
         display: flex;
         flex-direction: column;
-        height: 70vh;
+        height: auto;
     }
 
      header .header__nav{
         flex-direction: column;
         height: 10%;
+        padding: 0;
     }
 
      .nav__name{
@@ -228,5 +246,18 @@
     }
 
     
+    .proyectos__item-container {
+        position: relative;
+        margin: 0.2em;
+        
+    }
+
+    #select-arrow{
+        color: white;
+        position: absolute;
+        right: 100px;
+        top: 0;
+        
+   }
 
 }

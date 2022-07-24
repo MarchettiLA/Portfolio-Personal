@@ -13,37 +13,82 @@ header{
 }
 
 .nav__name{
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: white;
     opacity: 0;
     transition: all 1s;
 }
 
 .nav__name:hover{
-    font-size: 1.7em;
+    font-size: 1.5em;
+    
 }
 
-.nav__item{
-    list-style: none;
-    backface-visibility: hidden;
-}
-
-.nav__item:hover  {
-    font-size: 1.2em;
-}
-
-.nav__item a {
+.nav__name a{
     color: white;
     text-decoration: none;
 }
 
+.nav__name a:hover{
+    color: white;
+}
+
+.nav__item{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    backface-visibility: hidden;
+
+    position: relative;
+}
+
+
+
+.nav__item a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
 .nav__item a:hover{
     color: white;
+    font-size: 1.2em;
 }
 
 .nav__item a b {
   color: orange;
 }
+
+.proyectos__container{
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+
+.proyectos__item{
+    margin-bottom: .5em;
+}
+
+.proyectos__item-container{
+    display: none;
+    position: absolute;
+    transition: all .5s;
+    opacity: 0;
+    margin-top: .5em;
+    text-align: center;
+    z-index: 20;
+}
+
+#select-arrow{
+     color: white;
+     position: absolute;
+     right: -40px;
+     font-size: 1.5em;
+     
+}
+
+
 
 /* QUIEN SOY */
 

@@ -1,0 +1,11 @@
+@media (max-width: 1024px){
+    .galeria__flex-container{
+        flex-direction: column;
+    }
+
+    .galeria__flex-item{
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+    }
+}

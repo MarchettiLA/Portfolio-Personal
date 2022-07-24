@@ -8,6 +8,29 @@ barras.classList.add("fa-solid", "fa-bars", "nav__mobile-button__barras");
 const navList = document.querySelector(".nav__lista");
 const navItems = document.querySelectorAll(".nav__item");
 
+
+//PROYECTOS NAV INTERACCION
+const proyectosItemList = document.querySelectorAll(".proyectos__item-container");
+const proyectosFlecha = document.querySelector("#select-arrow");
+
+const handleProyectSelect = ()=>{
+    proyectosFlecha.addEventListener("click", ()=>{
+        proyectosItemList.forEach( e =>{
+            if(e.style.display == "none" || e.style.display == ""){
+                e.style.display = "block"
+                setTimeout(()=>e.style.opacity = 1, 200)
+            } else{
+                e.style.opacity = 0
+                setTimeout(()=> e.style.display = "none", 600)
+            }
+        })
+    })
+    
+}
+
+handleProyectSelect();
+
+
 // CUANDO TODO ESTA CON MAXIMA OPACIDAD SE MODIFICA A TRUE
 let ready = false;
 
@@ -28,23 +51,39 @@ setInterval(responsiveInterval, 200)
 
 //EVENTO QUE ABRE Y CIERRA MENU MOBILE
 
+const navItemLink = document.querySelectorAll(".nav__item--link");
+
+const hideAndShowNavItemLinks = () => {
+    navItemLink.forEach((e)=>{
+        if(e.style.display == "none" || e.style.display == ""){
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+}
+
 navMenuButton.addEventListener("click",abrirYCerrarNavMenu =()=>{
     if(navList.style.opacity == 0 && !ready){
         navList.style.transition = "height 0.5s, opacity 1s"
         navList.style.opacity = 1
         navList.style.height = "30vh"
         ready = true;
+        hideAndShowNavItemLinks();
     } else  {
         ready = false
         navList.style.transition = "height 1s, opacity 0.5s"
         navList.style.opacity = 0
         navList.style.height = 0
+        hideAndShowNavItemLinks();
     }
 })
 window.addEventListener("load", ()=> {
     navMenuButton.style.opacity = 1;
     navMenuButton.style.transition = "all 2s"
 })
+
+
 
 //REDIRECCION DE NAV ITEMS
 
@@ -67,22 +106,7 @@ for (let i=0;i<navItems.length;i++){
         }        
         })
      }
-  
 
-
-
-
-
-
-// OPACIDAD LANDING ONLOAD
-
-const landingPage = document.querySelector(".header__quien-soy");
-
-const showLandingPage = () => {
-    landingPage.classList.replace("invisible","visible")
-}
-
-window.addEventListener("load",showLandingPage);
 
 // OPACIDAD NAV MENU ONLOAD
 
@@ -106,35 +130,3 @@ const normalizeTransition = () => {
     }
 }
 window.addEventListener("load", showNavItems)
-
-//OPACIDAD Y MOVIMIENTO SOBRE MI SCROLL
-
-const aboutMeImg = document.querySelector(".sobre-mi__imagen");
-
-const showAboutMeImg = () => {
-    aboutMeImg.classList.replace("invisible", "visible");
-    aboutMeImg.style.transform = "none"
-}
-
-window.addEventListener("scroll", showAboutMeImg);
-
-
-// INTERACCIONES LETRAS QUIEN SOY - PRESENTACION 
-
-
-// TRANSICION SOBRE MI
-
-const aboutContainer = document.querySelector(".main__sobre-mi");
-const aboutFont = document.querySelector(".sobre-mi__tipografia");
-const aboutImg = document.querySelector(".sobre-mi__imagen");
-const changeInsideOpacity = () => {
-    aboutFont.style.opacity = 1
-    aboutImg.style.opacity = 1
-}
-window.addEventListener("scroll",() => {
-    aboutContainer.style.transform = "none"
-    aboutContainer.style.opacity = 1
-    
-    setTimeout(changeInsideOpacity, 1000)
-
-})
