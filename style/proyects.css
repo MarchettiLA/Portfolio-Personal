@@ -1,10 +1,18 @@
 .main__proyectos{
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
+
 
 .main__proyectos h3{
     margin-top: 1em;
     margin-bottom: 1em;
+    order: -1;
+}
+
+.proyectos__flex:nth-child(3n){
+    order: 1;
 }
 
 .proyectos__flex{
@@ -13,6 +21,7 @@
     height: 33.33vh;
     width: 100%;
     position: relative;
+    order: 2;
 }
 
 .flex__item--banner{
@@ -50,10 +59,10 @@
 }
 
 .desarrollo{
-    background-image: url("../img/Mambo-visual-logo.png");
+    background-image: url("../img/calavera.png");
 }
 .diseño{
-    background-image: url("../img/portalvape/img-3.png");
+    background-image: url("../img/Mambo-visual-logo.png");
 }
 .fotografia{
     background-image: url("../img/nature/Untitled-1.png");
@@ -102,22 +111,29 @@
     background-color: #000;
 }
 
+.clip-text_two::after {
+    background-color: rgb(241 241 241 / 90%) ;
+    border: 2px solid rgb(0, 0, 0);
+}
 
-.clip-text_one {
+
+
+.clip-text_one, .clip-text_two {
     background-position: 0% 0%;
     background-size: 300%;
     transition: all 2s ease-in-out;
 }
 
 
-.wrapper:hover .clip-text_one{
+.wrapper:hover .clip-text_one , .wrapper:hover .clip-text_two{
     background-position: 100% 100%;
     
 }
 
-.wrapper:hover .proyectos__flex{
-    
+.wrapper:hover .clip-text_one:first-child{
 }
+
+
 
 /* RESPONSIVE */
 
