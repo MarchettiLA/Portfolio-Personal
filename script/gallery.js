@@ -81,6 +81,7 @@ const handleFlexItems = () =>{
                 if (designObjects[i].id == clickedItemID){
                     designObjects[i].createFlexItems();
                     handleGalleryFlexItems();
+                    window.scrollTo(0,140);
                 } 
             }
         })
