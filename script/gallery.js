@@ -62,8 +62,9 @@ const portalVape = new CategoryFlexItem(6,"portalvape");
 const milena = new CategoryFlexItem(3,"milena");
 const prisma = new CategoryFlexItem(4,"prisma");
 const glasgow = new CategoryFlexItem(4,"glasgow-beer");
+const drom = new CategoryFlexItem(10,"drom");
 
-const designObjects = [mamboVisual,elNexo,portalVape,milena,prisma,glasgow];
+const designObjects = [mamboVisual,elNexo,portalVape,milena,prisma,glasgow,drom];
 
 
 
