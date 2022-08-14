@@ -59,12 +59,12 @@ class CategoryFlexItem {
 const mamboVisual = new CategoryFlexItem(8,"mambo-visual");
 const elNexo = new CategoryFlexItem(4,"el-nexo");
 const portalVape = new CategoryFlexItem(6,"portalvape");
-const milena = new CategoryFlexItem(3,"milena");
 const prisma = new CategoryFlexItem(4,"prisma");
 const glasgow = new CategoryFlexItem(4,"glasgow-beer");
 const drom = new CategoryFlexItem(10,"drom");
+const garageStore = new CategoryFlexItem(4,"garage-store");
 
-const designObjects = [mamboVisual,elNexo,portalVape,milena,prisma,glasgow,drom];
+const designObjects = [mamboVisual,elNexo,portalVape,prisma,glasgow,drom,garageStore];
 
 
 
