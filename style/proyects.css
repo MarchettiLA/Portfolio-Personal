@@ -1,7 +1,6 @@
 .main__proyectos{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 
@@ -11,9 +10,7 @@
     order: -1;
 }
 
-.proyectos__flex:nth-child(3n){
-    order: 1;
-}
+
 
 .proyectos__flex{
     border-top: 12px solid #101010;
