@@ -6,13 +6,21 @@ main{
 
 .main__design-title{
     text-align: center;
-    color: white;
-    font-family: 'Kumbh Sans', sans-serif;
+    background: #f58634;
+    width: 25%;
+    padding: 10px 0px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+    font-family: 'Raleway';
+    color: #101010;
+    font-size: 1.6em;
 }
 
-h2{
-    text-align: center;
-    color: white;
+
+#proyectos-avril-titulo{
+    width: 30%;
 }
 
 /* FLEX CONTAINER */
