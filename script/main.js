@@ -17,7 +17,7 @@ const handleProyectSelect = ()=>{
     proyectosFlecha.addEventListener("click", ()=>{
         proyectosItemList.forEach( e =>{
             if(e.style.display == "none" || e.style.display == ""){
-                e.style.display = "block"
+                e.style.display = "flex"
                 setTimeout(()=>e.style.opacity = 1, 200)
             } else{
                 e.style.opacity = 0

@@ -10,18 +10,18 @@ footer{
 
 .contacto h3 {
     text-align: center;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: "Raleway";
     font-size: 2rem;
-    font-family: 'Anonymous Pro';
     background: #f69f00;
     margin: 1em auto;
-    width: 50%;
+    width: 30%;
     color: #343434;
     border-radius: 4px;
+    padding: 10px 0;
 }
 
 .contacto p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Kumbh Sans';
     color: white;
     border: 6px double  orange;
     padding: 1em;
@@ -41,7 +41,7 @@ footer{
 
 .contacto__formulario__contenedor label{
     margin-bottom: 0.5em;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Kumbh Sans';
     transition: all .5s;
     order: -1;
 }
@@ -89,7 +89,7 @@ footer{
     padding: 1.5em;
     border-radius: 12px;
     background-color: orange;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Kumbh Sans';
     width: 80%;
     margin: 0 10% ;
     border: none;
@@ -109,7 +109,8 @@ footer{
 }
 
 .contenedor-redes{
-    width:20%
+    width:20%;
+    transform: scale(0.8);
 }
 
 .redes__links img{
@@ -119,6 +120,6 @@ footer{
 
 .redes__links span{
     color: white;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Kumbh Sans';
 }
 

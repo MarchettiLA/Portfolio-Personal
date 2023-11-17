@@ -55,12 +55,14 @@
 
     .nav__item--link{
         display: none;
+        padding-bottom: .5em;
     }
 
     .proyectos__item-container {
         position: relative;
         margin: 0.2em;
-        
+        width: 100%;
+        padding-right: 0;
     }
 
     #select-arrow{

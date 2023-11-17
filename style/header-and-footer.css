@@ -27,6 +27,7 @@ header{
 .nav__name a{
     color: white;
     text-decoration: none;
+    font-family: 'Kumbh Sans';
 }
 
 .nav__name a:hover{
@@ -49,11 +50,13 @@ header{
     color: white;
     text-decoration: none;
     transition: all .5s;
+    font-family: 'Kumbh Sans';
 }
 
 .nav__item a:hover{
     color: white;
-    font-size: 1.2em;
+    transform: scale(1.2);
+    
 }
 
 .nav__item a b {
@@ -68,16 +71,26 @@ header{
 
 .proyectos__item{
     margin-bottom: .5em;
+    transition: all .5s;
+}
+
+.proyectos__item:hover{
+    transform: scale(1.2);
+    transition: all .5s;
 }
 
 .proyectos__item-container{
-    display: none;
     position: absolute;
     transition: all .5s;
     opacity: 0;
     margin-top: .5em;
     text-align: center;
     z-index: 20;
+    display: none;
+    width: 300%;
+    opacity: 1;
+    flex-direction: column;
+    padding-right: 120px;
 }
 
 #select-arrow{
@@ -158,7 +171,7 @@ border-radius: 50%;
 
 .enlaces__link{
    font-size: 1em;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Kumbh Sans';
    text-decoration: none;
    transition: all 0.5s;
    margin-bottom: 1em;

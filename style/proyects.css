@@ -1,6 +1,7 @@
 .main__proyectos{
     display: flex;
     flex-direction: column;
+    background: #141414;
 }
 
 
