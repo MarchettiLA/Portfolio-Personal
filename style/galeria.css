@@ -10,6 +10,11 @@ main{
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+h2{
+    text-align: center;
+    color: white;
+}
+
 /* FLEX CONTAINER */
 
 .main__flex-container{
