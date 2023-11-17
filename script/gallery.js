@@ -1,9 +1,14 @@
 
-const flexContainer = document.querySelector(".main__flex-container");
+const flexContainer = document.querySelectorAll(".main__flex-container");
 const flexItems = document.getElementsByClassName("main__flex-item");
 
 const galeriaFlexContainer = document.createElement("div");
 galeriaFlexContainer.classList.add("galeria__flex-container");
+
+
+// FUNCION PARA DEJAR DE MOSTRAR TITULOS PROYECTOS
+
+const titulos = document.querySelectorAll(".main__design-title")
 
 
 
@@ -18,6 +23,8 @@ returnButtonContainer.appendChild(returnButton);
 returnButtonContainer.addEventListener("click", ()=>{
    
     if (clicked){
+
+      
        for(let element of galleryFlexItem){
         element.style.display = "unset"
         element.style.width = "600px";
@@ -26,6 +33,7 @@ returnButtonContainer.addEventListener("click", ()=>{
         clicked = false;
         window.scrollTo(0,actualScrollY)
        } 
+       
     }else {
         location.reload();
     }
@@ -41,9 +49,19 @@ class CategoryFlexItem {
     }
 
     createFlexItems = () =>{
-        flexContainer.innerHTML = "";
-        flexContainer.appendChild(returnButtonContainer);
-        flexContainer.appendChild(galeriaFlexContainer);
+        for (let element of titulos){
+            element.style.display = "none"
+        };
+         for (let element of flexContainer){
+         element.innerHTML = "";
+         element.appendChild(returnButtonContainer);
+         element.appendChild(galeriaFlexContainer);} 
+       
+
+       // flexContainer.innerHTML = "";
+       // flexContainer.appendChild(returnButtonContainer)
+        //flexContainer.appendChild(galeriaFlexContainer)
+       
         for (let i= 0; i < this.cantidadImg; i++){    //MODIFICAR i SEGUN CANTIDAD DE IMAGENES
             let galeriaFlexItem = document.createElement("div");
             galeriaFlexItem.classList.add("galeria__flex-item");
@@ -63,8 +81,12 @@ const prisma = new CategoryFlexItem(4,"prisma");
 const glasgow = new CategoryFlexItem(4,"glasgow-beer");
 const drom = new CategoryFlexItem(10,"drom");
 const garageStore = new CategoryFlexItem(4,"garage-store");
+const campañasAvril = new CategoryFlexItem(7,"campañas-avril");
+const flyersAvril = new CategoryFlexItem(19,"flyers-avril");
+const carrouselesAvril = new CategoryFlexItem(8,"carrouseles-avril");
+const papeleriaAvril = new CategoryFlexItem(9,"papeleria-avril");
 
-const designObjects = [mamboVisual,elNexo,portalVape,prisma,glasgow,drom,garageStore];
+const designObjects = [mamboVisual,elNexo,portalVape,prisma,glasgow,drom,garageStore,campañasAvril,flyersAvril,carrouselesAvril,papeleriaAvril];
 
 
 
@@ -97,18 +119,27 @@ var clicked = false // VARIABLE PARA SABER SI UNA IMAGEN DE LA GALERIA ESTA ACTI
 
 var actualScrollY ; // VARIABLE PARA SABER EL SCROLL ACTUAL Y UTILIZARLO PARA VOLVER DONDE ESTABAMOS ANTES DE AMPLIAR IMAGEN
 
+
+
 const handleGalleryFlexItems = ()=>{
     
     for (let element of galleryFlexItem){
         element.addEventListener("click",()=>{
             if(!clicked && window.innerWidth >= 1024){
+
+                function controlOpacity() {
+                    element.style.opacity ="100"
+                }
+                
                 for (let element of galleryFlexItem){
                    element.style.display = "none"
                 }
                     actualScrollY = window.scrollY
+                    element.style.opacity = "0"
                     element.style.display = "block"
                     element.style.width = "100%";
                     element.style.height = "800px";
+                    setTimeout(controlOpacity, 200)
                     element.style.backgroundSize = "contain"
                     window.scrollTo(0,140);
                     clicked = true;

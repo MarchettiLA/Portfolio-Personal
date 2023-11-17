@@ -4,6 +4,12 @@ main{
     width: 100vw;
 }
 
+.main__design-title{
+    text-align: center;
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
 /* FLEX CONTAINER */
 
 .main__flex-container{

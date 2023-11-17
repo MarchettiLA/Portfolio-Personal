@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1.8em;
     height: auto;
     justify-content: center;
     width: 95%;
@@ -20,5 +20,10 @@
     position: relative;
     transition: all .5s;
     width: 600px;
+    
+}
+
+.galeria__flex-item:hover{
+    transform: scale(1.08);
 }
 
