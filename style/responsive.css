@@ -143,9 +143,9 @@
     }
 
     .sobre-mi__parrafo{
-       
         align-self: center;
-        width: 80%;
+        width: 85%;
+        font-size: 1.3em;
     }
 
     .sobre-mi__imagen{
