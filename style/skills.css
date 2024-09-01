@@ -11,7 +11,7 @@
 .skills__titulo{
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     color: white;
     margin-bottom: 2em;
     text-shadow: 3px 3px 5px black;
@@ -21,7 +21,8 @@
     color: #191919;
     text-align: center;
     font-family: 'Raleway';
-    background: orange;
+    font-weight: 600;
+    background: linear-gradient(180deg, rgba(226, 146, 0, 1) 0%, rgba(255, 165, 0, 1) 100%);
     padding: 10px 0;
     width: 25%;
     margin: 0 auto;
@@ -101,7 +102,7 @@
 }
 
 .skills__flex-item:nth-child(4):hover i{
-    color: #7cc5d9;
+    color: #f34f29;
 }
 
 .skills__flex-item:nth-child(5):hover i {

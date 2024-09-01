@@ -25,16 +25,16 @@ main{
     height: 40%;
 }
 
-.sobre-mi__titulo{
-    
+.sobre-mi__titulo{   
     text-align: right;
-    font-family: 'Anonymous Pro', monospace;
+    font-family:'Kumbh Sans', sans-serif;
     font-size: 2.5em;
     background: #222222;
     color: #f69f00;
     width: 41%;
     border-radius: 4px;
     margin: 0.5em 0;
+    padding-right: .4em;
 }
 
 

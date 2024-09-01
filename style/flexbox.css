@@ -65,7 +65,7 @@ header{
 }
 
 .quien-soy__enlaces{
-    width: 100%;
+    width: 40%;
     justify-content: space-around;
     display: flex;
 }
@@ -86,6 +86,7 @@ header{
 
 .sobre-mi__parrafo{
     opacity: 1;
+    font-family: "Raleway";
 }
 
 /* MAIN SKILLS */

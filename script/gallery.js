@@ -43,9 +43,10 @@ returnButtonContainer.addEventListener("click", ()=>{
 // CREANDO CLASE Y OBJETOS CATEGORIAS GALERIA
 
 class CategoryFlexItem {
-    constructor(cantidadImg, id){
+    constructor(cantidadImg, id, extension){
         this.id = id;
         this.cantidadImg = cantidadImg;
+        this.extension = extension;
     }
 
     createFlexItems = () =>{
@@ -66,29 +67,44 @@ class CategoryFlexItem {
             let galeriaFlexItem = document.createElement("div");
             galeriaFlexItem.classList.add("galeria__flex-item");
             galeriaFlexContainer.appendChild(galeriaFlexItem);
-            galeriaFlexItem.style.backgroundImage = `url(./img/${this.id}/img-${i}.png)`;
+            if(this.extension == "png"){
+                galeriaFlexItem.classList.add("galeria__flex-item-img");
+                galeriaFlexItem.classList.add("imagen");
+                galeriaFlexItem.style.backgroundImage = `url(./img/${this.id}/img-${i}.png)`;
+            } else {
+                galeriaFlexItem.innerHTML = `<video src=./img/${this.id}/vid-${i}.${this.extension} class="galeria__flex-item video" controls loop muted style="width : auto"></video>`
+            }
+            
             galeriaFlexItem.style.backgroundPosition = "center";
         }
     }
 }
 
-// DECLARANDO OBJETOS
-
-const mamboVisual = new CategoryFlexItem(8,"mambo-visual");
-const elNexo = new CategoryFlexItem(4,"el-nexo");
-const portalVape = new CategoryFlexItem(6,"portalvape");
-const prisma = new CategoryFlexItem(4,"prisma");
-const glasgow = new CategoryFlexItem(4,"glasgow-beer");
-const drom = new CategoryFlexItem(10,"drom");
-const garageStore = new CategoryFlexItem(4,"garage-store");
-const campañasAvril = new CategoryFlexItem(7,"campañas-avril");
-const flyersAvril = new CategoryFlexItem(19,"flyers-avril");
-const carrouselesAvril = new CategoryFlexItem(8,"carrouseles-avril");
-const papeleriaAvril = new CategoryFlexItem(9,"papeleria-avril");
-
-const designObjects = [mamboVisual,elNexo,portalVape,prisma,glasgow,drom,garageStore,campañasAvril,flyersAvril,carrouselesAvril,papeleriaAvril];
 
 
+// DECLARANDO OBJETOS SECCIÓN DISEÑO
+
+const mamboVisual = new CategoryFlexItem(8,"mambo-visual", "png");
+const elNexo = new CategoryFlexItem(4,"el-nexo","png");
+const portalVape = new CategoryFlexItem(6,"portalvape","png");
+const prisma = new CategoryFlexItem(4,"prisma","png");
+const glasgow = new CategoryFlexItem(4,"glasgow-beer","png");
+const drom = new CategoryFlexItem(10,"drom","png");
+const garageStore = new CategoryFlexItem(4,"garage-store","png");
+const campañasAvril = new CategoryFlexItem(7,"campañas-avril","png");
+const flyersAvril = new CategoryFlexItem(19,"flyers-avril","png");
+const carrouselesAvril = new CategoryFlexItem(8,"carrouseles-avril","png");
+const papeleriaAvril = new CategoryFlexItem(15,"papeleria-avril","png");
+
+// DECLARANDO OBJETOS SECCIÓN MOTION
+
+const reels = new CategoryFlexItem(17,"reels", "webm")
+const historiasAnimadas = new CategoryFlexItem(15,"historias-animadas", "webm")
+const animacionesVarias = new CategoryFlexItem(5,"animaciones-varias", "mp4")
+const historiasCampañaAvril = new CategoryFlexItem(12,"historias-campaña-avril", "webm")
+
+const designObjects = [mamboVisual,elNexo,portalVape,prisma,glasgow,drom,garageStore,campañasAvril,
+    flyersAvril,carrouselesAvril,papeleriaAvril, reels,historiasAnimadas,animacionesVarias,historiasCampañaAvril];
 
 
 
@@ -125,15 +141,20 @@ const handleGalleryFlexItems = ()=>{
     
     for (let element of galleryFlexItem){
         element.addEventListener("click",()=>{
-            if(!clicked && window.innerWidth >= 1024){
+            if(element.classList[1] == "video"){
+                return "video"
+            }
 
+            if(element.classList[2] == "imagen" && !clicked && window.innerWidth >= 1024){
+           
+                
                 function controlOpacity() {
                     element.style.opacity ="100"
                 }
                 
                 for (let element of galleryFlexItem){
-                   element.style.display = "none"
-                }
+                   element.style.display = "none";
+                }    
                     actualScrollY = window.scrollY
                     element.style.opacity = "0"
                     element.style.display = "block"

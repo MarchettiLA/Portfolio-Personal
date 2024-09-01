@@ -15,15 +15,26 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 24px;
+    border-radius: 24px 24px 0px 0px;
     height: 400px;
     position: relative;
     transition: all .5s;
-    width: 600px;
+    width: auto;
     
+}
+
+.galeria__flex-item-img{
+    width: 600px;
 }
 
 .galeria__flex-item:hover{
     transform: scale(1.08);
 }
 
+.galeria__flex-item .video{
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+    position: relative;
+    border-radius: 24px 24px 24px 24px;
+}

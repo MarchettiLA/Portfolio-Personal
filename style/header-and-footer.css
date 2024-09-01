@@ -1,3 +1,8 @@
+@font-face {
+    font-family: sifonn;
+    src: url('../fonts/SIFONN_PRO.otf') format('truetype');
+  }
+
 *{
     box-sizing: border-box;
 }
@@ -27,7 +32,8 @@ header{
 .nav__name a{
     color: white;
     text-decoration: none;
-    font-family: 'Kumbh Sans';
+    font-family: sifonn ,sans-serif;
+    letter-spacing: 1px;
 }
 
 .nav__name a:hover{
@@ -40,7 +46,6 @@ header{
     justify-content: center;
     list-style: none;
     backface-visibility: hidden;
-
     position: relative;
 }
 
@@ -51,10 +56,11 @@ header{
     text-decoration: none;
     transition: all .5s;
     font-family: 'Kumbh Sans';
+    font-weight: 500;
 }
 
 .nav__item a:hover{
-    color: white;
+    color: orange;
     transform: scale(1.2);
     
 }
@@ -70,8 +76,17 @@ header{
 }
 
 .proyectos__item{
-    margin-bottom: .5em;
+    padding: 5px;
+    background: #101010;
+    border: 1px solid #2f2f2f;
+    border-bottom: 1px solid #656565;
+    border-radius: 2px;
+}
+
+.proyectos__item a{
+    margin-bottom: .7em;
     transition: all .5s;
+    font-weight: 200;
 }
 
 .proyectos__item:hover{
@@ -102,7 +117,6 @@ header{
 }
 
 
-
 /* QUIEN SOY */
 
 .header__quien-soy{
@@ -120,10 +134,8 @@ header{
     opacity: 0;
 }
 
-
-
 .quien-soy__tipografia h1, .quien-soy__tipografia h3{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
     font-size: 3.5rem;
     margin: .2rem 0;
     text-align: left;
@@ -131,6 +143,9 @@ header{
 
 .presentacion__name{
     color: #ffa500;
+    font-family: 'Raleway';
+    letter-spacing: 1.5px;
+    font-weight: 600;
 }
 
 .quien-soy__detalles{
@@ -140,12 +155,12 @@ header{
 
 .quien-soy__detalles span{
     font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 600;
     width: auto;
-    background-color: orange;
-    padding: .1em 0;
-    
-
+    background: linear-gradient(180deg, rgba(226, 146, 0, 1) 0%, rgba(255, 165, 0, 1) 100%);
+    padding: 0px .1em;
 }
+    
 
 .quien-soy__retrato{
     width: 35%;
