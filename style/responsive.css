@@ -73,6 +73,10 @@
         
    }
 
+   .titulo{
+    width: 60%;
+   }
+
     /* QUIEN SOY */
 
     .header__quien-soy{
@@ -261,5 +265,7 @@
         top: 0;
         
    }
+
+ 
 
 }

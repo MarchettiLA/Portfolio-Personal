@@ -56,7 +56,7 @@
     justify-content: center;
 }
 
-.desarrollo{
+.motion{
     background-image: url("../img/calavera.png");
 }
 .diseño{
@@ -67,7 +67,7 @@
 }
 
 .clip-text {
-    font-size: 6em;
+    font-size: 5em;
     font-weight: bold;
     line-height: 1;
     position: relative;
