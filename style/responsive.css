@@ -173,6 +173,8 @@
         margin-bottom: 1em;
     }
 
+
+  
     /* CONTACTO */
 
     .contacto__contenedor-form-redes{
@@ -255,11 +257,22 @@
         text-align: center;
     }
 
-    
+    .proyectos__container{
+        display: flex;
+        flex-direction: column;
+    }
+
     .proyectos__item-container {
         position: relative;
-        margin: 0.2em;
+        margin: 0.4em;
+        padding-right: 0;
+        width: 100%;
         
+    }
+
+    .proyectos__item{
+        border: 0px solid #2f2f2f;
+        border-bottom: 1px solid #656565;
     }
 
     #select-arrow{
@@ -270,6 +283,6 @@
         
    }
 
- 
+  
 
 }

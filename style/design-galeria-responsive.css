@@ -1,11 +1,26 @@
 @media (max-width: 1024px){
     .galeria__flex-container{
-        flex-direction: column;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.8em;
+        height: auto;
+        justify-content: center;
+        width: 95%;
+        padding: 0 2.5%;
+        margin-top: 3.5em;
     }
 
     .galeria__flex-item{
         width: 100%;
         height: 300px;
         background-size: contain;
+        width: fit-content;
     }
+
+    .galeria__flex-item video{
+        width: 100% !important;
+        
+    }
+
 }
